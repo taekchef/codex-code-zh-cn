@@ -189,7 +189,8 @@ async function main() {
 
   // /chinese、/english 切换：Codex 会报 Unrecognized command，我们把这类
   // 错误消息替换成切换成功的提示（按错误里的命令名决定中/英文提示）。
-  const applyLanguage = (lang) => {
+  const applyLanguage = (lang, typedCommand) => {
+    if (lang === null) return; // /language、/lang 只显示帮助，不切换
     language = lang;
     settings.setLanguage(language);
     translator.enabled = language === 'zh-CN';
@@ -200,9 +201,15 @@ async function main() {
   }, {
     enabled: language === 'zh-CN',
     onBeforeText: (text) => {
-      const m = /Unrecognized command '\/(chinese|zh|english|en)'/i.exec(text);
+      const m = /Unrecognized command '\/(chinese|zh|english|en|language|lang)'/i.exec(text);
       if (m) {
-        const lang = /^(chinese|zh)$/i.test(m[1]) ? 'zh-CN' : 'en';
+        const cmd = m[1].toLowerCase();
+        if (cmd === 'language' || cmd === 'lang') {
+          return language === 'zh-CN'
+            ? '语言切换：输入 /chinese 切中文，/english 切英文（全局生效）。'
+            : 'Language: type /chinese for Chinese or /english for English (persisted).';
+        }
+        const lang = cmd === 'chinese' || cmd === 'zh' ? 'zh-CN' : 'en';
         return lang === 'zh-CN'
           ? '✅ 中文模式已开启（codex-code-zh-cn），界面已切换为中文。'
           : '✅ English mode enabled (codex-code-zh-cn).';

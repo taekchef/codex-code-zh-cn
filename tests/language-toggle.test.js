@@ -28,6 +28,11 @@ test('ignores ordinary input and inline args', () => {
   assert.deepEqual(collect('/chinese now\r'), []);
 });
 
+test('/language and /lang report null language (help command)', () => {
+  assert.deepEqual(collect('/language\r'), [{ lang: null, cmd: 'language' }]);
+  assert.deepEqual(collect('/lang\r'), [{ lang: null, cmd: 'lang' }]);
+});
+
 test('backspace edits the line', () => {
   assert.deepEqual(collect('/chinesex\x7f\r'), [{ lang: 'zh-CN', cmd: 'chinese' }]);
 });
