@@ -63,6 +63,14 @@ test('longer pattern beats shorter literal prefix', () => {
   assert.equal(r.out, '正在启动 MCP 服务器 (2/5)：chrome, stitch');
 });
 
+test('patterns match mid-run and trailing placeholders are greedy', () => {
+  const m = new Matcher([
+    { en: 'MCP client for `${name}` failed to start: ${detail}', zh: 'MCP 客户端 `${name}` 启动失败：${detail}', pad: false },
+  ]);
+  const r = m.translate('⚠ MCP client for `stitch` failed to start: MCP startup failed: connection closed:');
+  assert.equal(r.out, '⚠ MCP 客户端 `stitch` 启动失败：MCP startup failed: connection closed:');
+});
+
 test('punctuation-only continuation is handled', () => {
   const m = new Matcher([{ en: 'Options:', zh: '选项：' }]);
   assert.equal(m.translate('Options:').out, '选项：  ');
