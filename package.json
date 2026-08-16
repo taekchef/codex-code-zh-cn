@@ -1,6 +1,6 @@
 {
   "name": "codex-code-zh-cn",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "OpenAI Codex CLI 简体中文本地化扩展：实时汉化终端界面、状态动词与提示，并启用桌面版中文。",
   "license": "MIT",
   "type": "commonjs",

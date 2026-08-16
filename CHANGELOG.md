@@ -1,3 +1,12 @@
+## v1.0.1（2026-08-16）
+
+### 修复
+
+- install.sh：部分 npm/系统组合下 node-pty 的 spawn-helper 丢失可执行位，安装后显式补齐
+- 单元测试改用 `node --test` 自动发现，修复 Windows CI 的 glob 不展开问题
+- codexConfigPath 的 CODEX_HOME 断言改为跨平台路径构造
+- codex-zh-doctor 现在报告去重后的词条总数
+
 # Changelog
 
 ## v1.0.0（2026-08-16）
