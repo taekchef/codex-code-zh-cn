@@ -187,19 +187,12 @@ async function main() {
   process.stdout.on('error', () => {}); // swallow EPIPE when piped into head/less
   const entries = loadEntries();
 
-  // /chinese、/english 切换：Codex 会报 Unrecognized command，我们把这个
-  // 错误消息替换成切换成功的提示。
-  let pendingToggle = null;
-  const applyLanguage = (lang, typedCommand) => {
+  // /chinese、/english 切换：Codex 会报 Unrecognized command，我们把这类
+  // 错误消息替换成切换成功的提示（按错误里的命令名决定中/英文提示）。
+  const applyLanguage = (lang) => {
     language = lang;
     settings.setLanguage(language);
     translator.enabled = language === 'zh-CN';
-    pendingToggle = {
-      typedCommand,
-      message: language === 'zh-CN'
-        ? '✅ 中文模式已开启（codex-code-zh-cn），界面已切换为中文。'
-        : '✅ English mode enabled (codex-code-zh-cn).',
-    };
   };
 
   const translator = new StreamTranslator(entries, (chunk) => {
@@ -207,13 +200,12 @@ async function main() {
   }, {
     enabled: language === 'zh-CN',
     onBeforeText: (text) => {
-      if (pendingToggle) {
-        const needle = `Unrecognized command '/${pendingToggle.typedCommand}'`;
-        if (text.includes(needle)) {
-          const message = pendingToggle.message;
-          pendingToggle = null;
-          return message;
-        }
+      const m = /Unrecognized command '\/(chinese|zh|english|en)'/i.exec(text);
+      if (m) {
+        const lang = /^(chinese|zh)$/i.test(m[1]) ? 'zh-CN' : 'en';
+        return lang === 'zh-CN'
+          ? '✅ 中文模式已开启（codex-code-zh-cn），界面已切换为中文。'
+          : '✅ English mode enabled (codex-code-zh-cn).';
       }
       return undefined;
     },
