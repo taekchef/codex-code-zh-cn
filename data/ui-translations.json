@@ -1,0 +1,1126 @@
+[
+  {
+    "en": "Press space or enter to toggle; esc to go back",
+    "zh": "空格或回车切换；esc 返回"
+  },
+  {
+    "en": "1 hook needs review before it can run.",
+    "zh": "1 个 Hook 需要审核后才能运行。"
+  },
+  {
+    "en": "SessionEnd hooks",
+    "zh": "会话结束 Hook"
+  },
+  {
+    "en": "model:     ",
+    "zh": "模型："
+  },
+  {
+    "en": "model:",
+    "zh": "模型："
+  },
+  {
+    "en": "loading",
+    "zh": "加载中"
+  },
+  {
+    "en": " to change ",
+    "zh": "切换"
+  },
+  {
+    "en": "directory:",
+    "zh": "目录："
+  },
+  {
+    "en": "Event",
+    "zh": "事件"
+  },
+  {
+    "en": "Matcher",
+    "zh": "匹配器"
+  },
+  {
+    "en": "Source",
+    "zh": "来源"
+  },
+  {
+    "en": "Command",
+    "zh": "命令"
+  },
+  {
+    "en": "Timeout",
+    "zh": "超时"
+  },
+  {
+    "en": "Trusted",
+    "zh": "已信任"
+  },
+  {
+    "en": "Trust",
+    "zh": "信任"
+  },
+  {
+    "en": "Press",
+    "zh": "按"
+  },
+  {
+    "en": " to go back",
+    "zh": " 返回"
+  },
+  {
+    "en": " to continue",
+    "zh": " 继续"
+  },
+  {
+    "en": " to confirm",
+    "zh": " 确认"
+  },
+  {
+    "en": " to cancel",
+    "zh": " 取消"
+  },
+  {
+    "en": " to select",
+    "zh": " 选择"
+  },
+  {
+    "en": " to toggle",
+    "zh": " 切换"
+  },
+  {
+    "en": " to edit previous message",
+    "zh": " 编辑上一条消息"
+  },
+  {
+    "en": " to queue message",
+    "zh": " 排队消息"
+  },
+  {
+    "en": " to interrupt",
+    "zh": " 中断"
+  },
+  {
+    "en": " to interrupt and send immediately",
+    "zh": " 中断并立即发送"
+  },
+  {
+    "en": " to submit message",
+    "zh": " 发送消息"
+  },
+  {
+    "en": " to open thread",
+    "zh": " 打开会话"
+  },
+  {
+    "en": " to switch threads",
+    "zh": " 切换会话"
+  },
+  {
+    "en": " to view transcript",
+    "zh": " 查看 transcript"
+  },
+  {
+    "en": " to save or select",
+    "zh": " 保存或选择"
+  },
+  {
+    "en": " to save for next conversation",
+    "zh": " 保存到下次会话"
+  },
+  {
+    "en": " to move",
+    "zh": " 移动"
+  },
+  {
+    "en": " to close",
+    "zh": " 关闭"
+  },
+  {
+    "en": " to confirm and close",
+    "zh": " 确认并关闭"
+  },
+  {
+    "en": " to edit in external editor",
+    "zh": " 在外部编辑器中编辑"
+  },
+  {
+    "en": " to paste images",
+    "zh": " 粘贴图片"
+  },
+  {
+    "en": " to queue",
+    "zh": " 排队"
+  },
+  {
+    "en": " to exit",
+    "zh": " 退出"
+  },
+  {
+    "en": " to review hooks",
+    "zh": " 查看 Hook"
+  },
+  {
+    "en": " to view hooks",
+    "zh": " 查看 Hook"
+  },
+  {
+    "en": " to trust",
+    "zh": " 信任"
+  },
+  {
+    "en": " to trust all",
+    "zh": " 全部信任"
+  },
+  {
+    "en": " to allow network access",
+    "zh": " 允许网络访问"
+  },
+  {
+    "en": " to change mode",
+    "zh": " 切换模式"
+  },
+  {
+    "en": " to insert or",
+    "zh": " 插入或"
+  },
+  {
+    "en": " to toggle;",
+    "zh": " 切换；"
+  },
+  {
+    "en": "Press space or enter",
+    "zh": "按空格或回车"
+  },
+  {
+    "en": "esc to go back",
+    "zh": "esc 返回"
+  },
+  {
+    "en": "esc to exit",
+    "zh": "esc 退出"
+  },
+  {
+    "en": "enter to continue",
+    "zh": "回车继续"
+  },
+  {
+    "en": "ctrl+c to cancel",
+    "zh": "ctrl+c 取消"
+  },
+  {
+    "en": "ctrl+c to exit",
+    "zh": "ctrl+c 退出"
+  },
+  {
+    "en": "Enter your prompt",
+    "zh": "输入你的提示"
+  },
+  {
+    "en": "Type a message",
+    "zh": "输入消息"
+  },
+  {
+    "en": "Type your message",
+    "zh": "输入你的消息"
+  },
+  {
+    "en": "New conversation",
+    "zh": "新会话"
+  },
+  {
+    "en": "Resume conversation",
+    "zh": "继续会话"
+  },
+  {
+    "en": "Archive conversation",
+    "zh": "归档会话"
+  },
+  {
+    "en": "Delete conversation",
+    "zh": "删除会话"
+  },
+  {
+    "en": "Search conversations",
+    "zh": "搜索会话"
+  },
+  {
+    "en": "No conversations found",
+    "zh": "未找到会话"
+  },
+  {
+    "en": "No results found",
+    "zh": "未找到结果"
+  },
+  {
+    "en": "Thinking",
+    "zh": "思考中"
+  },
+  {
+    "en": "Working",
+    "zh": "工作中"
+  },
+  {
+    "en": "Generating",
+    "zh": "生成中"
+  },
+  {
+    "en": "Running",
+    "zh": "运行中"
+  },
+  {
+    "en": "Waiting for your input",
+    "zh": "等待你的输入"
+  },
+  {
+    "en": "Interrupted",
+    "zh": "已中断"
+  },
+  {
+    "en": "Completed",
+    "zh": "已完成"
+  },
+  {
+    "en": "Failed",
+    "zh": "失败"
+  },
+  {
+    "en": "Cancelled",
+    "zh": "已取消"
+  },
+  {
+    "en": "Approve command",
+    "zh": "批准命令"
+  },
+  {
+    "en": "Approve this command",
+    "zh": "批准此命令"
+  },
+  {
+    "en": "Run the command",
+    "zh": "运行命令"
+  },
+  {
+    "en": "Run command",
+    "zh": "运行命令"
+  },
+  {
+    "en": "Allow",
+    "zh": "允许"
+  },
+  {
+    "en": "Deny",
+    "zh": "拒绝"
+  },
+  {
+    "en": "Always allow",
+    "zh": "始终允许"
+  },
+  {
+    "en": "Once",
+    "zh": "一次"
+  },
+  {
+    "en": "Session",
+    "zh": "会话"
+  },
+  {
+    "en": "Approve",
+    "zh": "批准"
+  },
+  {
+    "en": "Reject",
+    "zh": "拒绝"
+  },
+  {
+    "en": "Accept",
+    "zh": "接受"
+  },
+  {
+    "en": "Decline",
+    "zh": "拒绝"
+  },
+  {
+    "en": "Cancel",
+    "zh": "取消"
+  },
+  {
+    "en": "Continue",
+    "zh": "继续"
+  },
+  {
+    "en": "Continue anyway?",
+    "zh": "仍然继续？"
+  },
+  {
+    "en": "Settings",
+    "zh": "设置"
+  },
+  {
+    "en": "Help",
+    "zh": "帮助"
+  },
+  {
+    "en": "Options",
+    "zh": "选项"
+  },
+  {
+    "en": "Usage:",
+    "zh": "用法："
+  },
+  {
+    "en": "Commands:",
+    "zh": "命令："
+  },
+  {
+    "en": "Arguments:",
+    "zh": "参数："
+  },
+  {
+    "en": "Possible values:",
+    "zh": "可选值："
+  },
+  {
+    "en": "Examples:",
+    "zh": "示例："
+  },
+  {
+    "en": "Press any key to continue",
+    "zh": "按任意键继续"
+  },
+  {
+    "en": "Press enter to continue",
+    "zh": "按回车继续"
+  },
+  {
+    "en": "Are you sure you want to exit?",
+    "zh": "确定要退出吗？"
+  },
+  {
+    "en": "Are you sure you want to quit?",
+    "zh": "确定要退出吗？"
+  },
+  {
+    "en": "Yes",
+    "zh": "是"
+  },
+  {
+    "en": "No",
+    "zh": "否"
+  },
+  {
+    "en": "On",
+    "zh": "开"
+  },
+  {
+    "en": "Off",
+    "zh": "关"
+  },
+  {
+    "en": "Enabled",
+    "zh": "已启用"
+  },
+  {
+    "en": "Disabled",
+    "zh": "已禁用"
+  },
+  {
+    "en": "Save",
+    "zh": "保存"
+  },
+  {
+    "en": "Discard",
+    "zh": "丢弃"
+  },
+  {
+    "en": "Edit",
+    "zh": "编辑"
+  },
+  {
+    "en": "Delete",
+    "zh": "删除"
+  },
+  {
+    "en": "Back",
+    "zh": "返回"
+  },
+  {
+    "en": "Next",
+    "zh": "下一"
+  },
+  {
+    "en": "Previous",
+    "zh": "上一步"
+  },
+  {
+    "en": "Search",
+    "zh": "搜索"
+  },
+  {
+    "en": "Filter",
+    "zh": "筛选"
+  },
+  {
+    "en": "Select all",
+    "zh": "全选"
+  },
+  {
+    "en": "Clear",
+    "zh": "清除"
+  },
+  {
+    "en": "Copy",
+    "zh": "复制"
+  },
+  {
+    "en": "Paste",
+    "zh": "粘贴"
+  },
+  {
+    "en": "Open",
+    "zh": "打开"
+  },
+  {
+    "en": "Close",
+    "zh": "关闭"
+  },
+  {
+    "en": "Refresh",
+    "zh": "刷新"
+  },
+  {
+    "en": "Retry",
+    "zh": "重试"
+  },
+  {
+    "en": "Skip",
+    "zh": "跳过"
+  },
+  {
+    "en": "Show",
+    "zh": "显示"
+  },
+  {
+    "en": "Hide",
+    "zh": "隐藏"
+  },
+  {
+    "en": "View",
+    "zh": "查看"
+  },
+  {
+    "en": "More",
+    "zh": "更多"
+  },
+  {
+    "en": "Less",
+    "zh": "收起"
+  },
+  {
+    "en": "Details",
+    "zh": "详情"
+  },
+  {
+    "en": "Summary",
+    "zh": "摘要"
+  },
+  {
+    "en": "Warning",
+    "zh": "警告"
+  },
+  {
+    "en": "Error",
+    "zh": "错误"
+  },
+  {
+    "en": "Notice",
+    "zh": "提示"
+  },
+  {
+    "en": "Info",
+    "zh": "信息"
+  },
+  {
+    "en": "Success",
+    "zh": "成功"
+  },
+  {
+    "en": "Loading",
+    "zh": "加载中"
+  },
+  {
+    "en": "Saving",
+    "zh": "保存中"
+  },
+  {
+    "en": "Connecting",
+    "zh": "连接中"
+  },
+  {
+    "en": "Disconnected",
+    "zh": "已断开"
+  },
+  {
+    "en": "Connected",
+    "zh": "已连接"
+  },
+  {
+    "en": "Authenticated",
+    "zh": "已认证"
+  },
+  {
+    "en": "Not authenticated",
+    "zh": "未认证"
+  },
+  {
+    "en": "Sign in",
+    "zh": "登录"
+  },
+  {
+    "en": "Sign out",
+    "zh": "退出登录"
+  },
+  {
+    "en": "Log in",
+    "zh": "登录"
+  },
+  {
+    "en": "Log out",
+    "zh": "登出"
+  },
+  {
+    "en": "Login",
+    "zh": "登录"
+  },
+  {
+    "en": "Model",
+    "zh": "模型"
+  },
+  {
+    "en": "Provider",
+    "zh": "提供商"
+  },
+  {
+    "en": "Reasoning effort",
+    "zh": "推理强度"
+  },
+  {
+    "en": "Auto",
+    "zh": "自动"
+  },
+  {
+    "en": "Low",
+    "zh": "低"
+  },
+  {
+    "en": "Medium",
+    "zh": "中"
+  },
+  {
+    "en": "High",
+    "zh": "高"
+  },
+  {
+    "en": "Sandbox",
+    "zh": "沙盒"
+  },
+  {
+    "en": "read-only",
+    "zh": "只读"
+  },
+  {
+    "en": "workspace-write",
+    "zh": "工作区可写"
+  },
+  {
+    "en": "danger-full-access",
+    "zh": "完全访问（危险）"
+  },
+  {
+    "en": "Approval policy",
+    "zh": "审批策略"
+  },
+  {
+    "en": "Hooks",
+    "zh": "Hook"
+  },
+  {
+    "en": "Plugins",
+    "zh": "插件"
+  },
+  {
+    "en": "Skills",
+    "zh": "技能"
+  },
+  {
+    "en": "Tools",
+    "zh": "工具"
+  },
+  {
+    "en": "Memory",
+    "zh": "记忆"
+  },
+  {
+    "en": "Theme",
+    "zh": "主题"
+  },
+  {
+    "en": "Language",
+    "zh": "语言"
+  },
+  {
+    "en": "Chinese",
+    "zh": "中文"
+  },
+  {
+    "en": "English",
+    "zh": "英文"
+  },
+  {
+    "en": "Directory",
+    "zh": "目录"
+  },
+  {
+    "en": "File",
+    "zh": "文件"
+  },
+  {
+    "en": "Branch",
+    "zh": "分支"
+  },
+  {
+    "en": "Repository",
+    "zh": "仓库"
+  },
+  {
+    "en": "Project",
+    "zh": "项目"
+  },
+  {
+    "en": "Workspace",
+    "zh": "工作区"
+  },
+  {
+    "en": "Terminal",
+    "zh": "终端"
+  },
+  {
+    "en": "Output",
+    "zh": "输出"
+  },
+  {
+    "en": "Input",
+    "zh": "输入"
+  },
+  {
+    "en": "History",
+    "zh": "历史"
+  },
+  {
+    "en": "Transcript",
+    "zh": "transcript"
+  },
+  {
+    "en": "Thread",
+    "zh": "会话"
+  },
+  {
+    "en": "Conversation",
+    "zh": "会话"
+  },
+  {
+    "en": "Session",
+    "zh": "会话"
+  },
+  {
+    "en": "Turn",
+    "zh": "轮次"
+  },
+  {
+    "en": "Token",
+    "zh": "Token"
+  },
+  {
+    "en": "Tokens",
+    "zh": "Token"
+  },
+  {
+    "en": "Cost",
+    "zh": "费用"
+  },
+  {
+    "en": "Usage",
+    "zh": "用量"
+  },
+  {
+    "en": "Latency",
+    "zh": "延迟"
+  },
+  {
+    "en": "Version",
+    "zh": "版本"
+  },
+  {
+    "en": "Update available",
+    "zh": "有可用更新"
+  },
+  {
+    "en": "Up to date",
+    "zh": "已是最新"
+  },
+  {
+    "en": "Check for updates",
+    "zh": "检查更新"
+  },
+  {
+    "en": "Install",
+    "zh": "安装"
+  },
+  {
+    "en": "Uninstall",
+    "zh": "卸载"
+  },
+  {
+    "en": "Update",
+    "zh": "更新"
+  },
+  {
+    "en": "Upgrade",
+    "zh": "升级"
+  },
+  {
+    "en": "Restart",
+    "zh": "重启"
+  },
+  {
+    "en": "Quit",
+    "zh": "退出"
+  },
+  {
+    "en": "Exit",
+    "zh": "退出"
+  },
+  {
+    "en": "OK",
+    "zh": "好"
+  },
+  {
+    "en": "Done",
+    "zh": "完成"
+  },
+  {
+    "en": "Ready",
+    "zh": "就绪"
+  },
+  {
+    "en": "Pending",
+    "zh": "等待中"
+  },
+  {
+    "en": "In progress",
+    "zh": "进行中"
+  },
+  {
+    "en": "Not started",
+    "zh": "未开始"
+  },
+  {
+    "en": "Unknown",
+    "zh": "未知"
+  },
+  {
+    "en": "None",
+    "zh": "无"
+  },
+  {
+    "en": "All",
+    "zh": "全"
+  },
+  {
+    "en": "Default",
+    "zh": "默认"
+  },
+  {
+    "en": "Custom",
+    "zh": "自定义"
+  },
+  {
+    "en": "Advanced",
+    "zh": "高级"
+  },
+  {
+    "en": "General",
+    "zh": "通用"
+  },
+  {
+    "en": "Appearance",
+    "zh": "外观"
+  },
+  {
+    "en": "Notifications",
+    "zh": "通知"
+  },
+  {
+    "en": "Shortcuts",
+    "zh": "快捷键"
+  },
+  {
+    "en": "Keyboard shortcuts",
+    "zh": "键盘快捷键"
+  },
+  {
+    "en": "Select an option",
+    "zh": "选择一个选项"
+  },
+  {
+    "en": "Choose an option",
+    "zh": "选择一个选项"
+  },
+  {
+    "en": "Please select",
+    "zh": "请选择"
+  },
+  {
+    "en": "Please choose",
+    "zh": "请选择"
+  },
+  {
+    "en": "Nothing selected",
+    "zh": "未选择任何项"
+  },
+  {
+    "en": "Nothing to show",
+    "zh": "无可显示内容"
+  },
+  {
+    "en": "No changes",
+    "zh": "无更改"
+  },
+  {
+    "en": "Changes",
+    "zh": "更改"
+  },
+  {
+    "en": "Modified",
+    "zh": "已修改"
+  },
+  {
+    "en": "Added",
+    "zh": "新增"
+  },
+  {
+    "en": "Removed",
+    "zh": "已移除"
+  },
+  {
+    "en": "Untracked",
+    "zh": "未跟踪"
+  },
+  {
+    "en": "Staged",
+    "zh": "已暂存"
+  },
+  {
+    "en": "Unstaged",
+    "zh": "未暂存"
+  },
+  {
+    "en": "Committing",
+    "zh": "提交中"
+  },
+  {
+    "en": "Commit message",
+    "zh": "提交信息"
+  },
+  {
+    "en": "Commit",
+    "zh": "提交"
+  },
+  {
+    "en": "Push",
+    "zh": "推送"
+  },
+  {
+    "en": "Pull",
+    "zh": "拉取"
+  },
+  {
+    "en": "Merge",
+    "zh": "合并"
+  },
+  {
+    "en": "Rebase",
+    "zh": "变基"
+  },
+  {
+    "en": "Diff",
+    "zh": "差异"
+  },
+  {
+    "en": "Patch",
+    "zh": "补丁"
+  },
+  {
+    "en": "Apply",
+    "zh": "应用"
+  },
+  {
+    "en": "Resolve",
+    "zh": "解决"
+  },
+  {
+    "en": "Conflict",
+    "zh": "冲突"
+  },
+  {
+    "en": "conflict",
+    "zh": "冲突"
+  },
+  {
+    "en": "Testing",
+    "zh": "测试中"
+  },
+  {
+    "en": "Building",
+    "zh": "构建中"
+  },
+  {
+    "en": "Installing",
+    "zh": "安装中"
+  },
+  {
+    "en": "Downloading",
+    "zh": "下载中"
+  },
+  {
+    "en": "Uploading",
+    "zh": "上传中"
+  },
+  {
+    "en": "Searching",
+    "zh": "搜索中"
+  },
+  {
+    "en": "Reading",
+    "zh": "读取中"
+  },
+  {
+    "en": "Writing",
+    "zh": "写入中"
+  },
+  {
+    "en": "Executing",
+    "zh": "执行中"
+  },
+  {
+    "en": "Compiling",
+    "zh": "编译中"
+  },
+  {
+    "en": "Analyzing",
+    "zh": "分析中"
+  },
+  {
+    "en": "Planning",
+    "zh": "规划中"
+  },
+  {
+    "en": "Reviewing",
+    "zh": "审查中"
+  },
+  {
+    "en": "Rendering",
+    "zh": "渲染中"
+  },
+  {
+    "en": "Processing",
+    "zh": "处理中"
+  },
+  {
+    "en": "Starting",
+    "zh": "启动中"
+  },
+  {
+    "en": "Stopping",
+    "zh": "停止中"
+  },
+  {
+    "en": "Waiting",
+    "zh": "等待中"
+  },
+  {
+    "en": "Paused",
+    "zh": "已暂停"
+  },
+  {
+    "en": "Resumed",
+    "zh": "已恢复"
+  },
+  {
+    "en": "Finished",
+    "zh": "已完成"
+  },
+  {
+    "en": "Succeeded",
+    "zh": "成功"
+  },
+  {
+    "en": "Aborted",
+    "zh": "已中止"
+  },
+  {
+    "en": "Timed out",
+    "zh": "已超时"
+  },
+  {
+    "en": "Retrying",
+    "zh": "重试中"
+  },
+  {
+    "en": "Press Ctrl+C to cancel",
+    "zh": "按 Ctrl+C 取消"
+  },
+  {
+    "en": "Press Ctrl+C to stop",
+    "zh": "按 Ctrl+C 停止"
+  },
+  {
+    "en": "Press Ctrl+C to exit",
+    "zh": "按 Ctrl+C 退出"
+  },
+  {
+    "en": "Press Esc to cancel",
+    "zh": "按 Esc 取消"
+  },
+  {
+    "en": "Press Esc to close",
+    "zh": "按 Esc 关闭"
+  },
+  {
+    "en": "Press Enter to confirm",
+    "zh": "按回车确认"
+  },
+  {
+    "en": "Do you trust the contents of this directory?",
+    "zh": "你信任此目录中的内容吗？"
+  },
+  {
+    "en": "Working with untrusted files can be risky",
+    "zh": "处理不受信任的文件可能存在风险"
+  },
+  {
+    "en": "This directory is not trusted",
+    "zh": "此目录不受信任"
+  },
+  {
+    "en": "Trust this directory",
+    "zh": "信任此目录"
+  },
+  {
+    "en": "Don't trust",
+    "zh": "不信任"
+  },
+  {
+    "en": "Not now",
+    "zh": "暂不"
+  }
+]

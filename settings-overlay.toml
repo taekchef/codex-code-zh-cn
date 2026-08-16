@@ -1,0 +1,4 @@
+# codex-code-zh-cn 设置覆盖（唯一配置项）
+# 只写桌面版语言；不触碰模型、认证、沙盒等任何其他配置。
+[desktop]
+localeOverride = "zh-CN"

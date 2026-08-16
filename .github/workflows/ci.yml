@@ -1,0 +1,34 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+        node: [20, 24]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node }}
+      - name: Install dependencies
+        run: npm install --no-audit --no-fund
+      - name: Lint translation data
+        run: npm run lint
+      - name: Unit tests
+        run: npm test
+      - name: Install script syntax (POSIX)
+        if: runner.os != 'Windows'
+        run: bash -n install.sh && bash -n uninstall.sh
+      - name: PowerShell script syntax
+        shell: pwsh
+        run: |
+          $null = [System.Management.Automation.Language.Parser]::ParseFile('install.ps1', [ref]$null, [ref]$null)
+          $null = [System.Management.Automation.Language.Parser]::ParseFile('uninstall.ps1', [ref]$null, [ref]$null)

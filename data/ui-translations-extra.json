@@ -1,0 +1,825 @@
+[
+  {
+    "en": "Hooks need review",
+    "zh": "Hook 需要审核"
+  },
+  {
+    "en": "1 hook is new or changed.",
+    "zh": "1 Hook 是新增或已变更。"
+  },
+  {
+    "en": "Hooks can run outside the sandbox after you trust them.",
+    "zh": "信任后，Hook 可以在沙盒之外运行。"
+  },
+  {
+    "en": "Trust all and continue",
+    "zh": "全部信任并继续"
+  },
+  {
+    "en": "Continue without trusting (hooks won't run)",
+    "zh": "不信任并继续（Hook 不会运行）"
+  },
+  {
+    "en": "Review hooks",
+    "zh": "审核 Hook"
+  },
+  {
+    "en": "1. Review hooks",
+    "zh": "1. 审核 Hook"
+  },
+  {
+    "en": "Trusting hooks...",
+    "zh": "正在信任 Hook..."
+  },
+  {
+    "en": "Press enter to confirm or esc to go back",
+    "zh": "回车确认或 esc 返回"
+  },
+  {
+    "en": "Press enter to confirm",
+    "zh": "回车确认"
+  },
+  {
+    "en": "Write tests for @filename",
+    "zh": "为 @filename 编写测试"
+  },
+  {
+    "en": "Explain this codebase",
+    "zh": "解释这个代码库"
+  },
+  {
+    "en": "Summarize recent commits",
+    "zh": "总结最近的提交"
+  },
+  {
+    "en": "Run /review on my current changes",
+    "zh": "对当前更改运行 /review"
+  },
+  {
+    "en": "Find and fix a bug in @filename",
+    "zh": "查找并修复 @filename 中的 bug"
+  },
+  {
+    "en": "tab to queue message",
+    "zh": "Tab 排队消息"
+  },
+  {
+    "en": "100% context left",
+    "zh": "剩余上下文 100%"
+  },
+  {
+    "en": "Queued follow-up inputs",
+    "zh": "已排队的追问输入"
+  },
+  {
+    "en": "queued follow-up",
+    "zh": "已排队的追问"
+  },
+  {
+    "en": "⌥ + ↑ edit last queued message",
+    "zh": "⌥ + ↑ 编辑上一条排队消息"
+  },
+  {
+    "en": "Tip:",
+    "zh": "提示"
+  },
+  {
+    "en": "Use /personality to customize how Codex communicates.",
+    "zh": "使用 /personality 自定义 Codex 的沟通方式。"
+  },
+  {
+    "en": "Use /fast to enable our fastest inference with increased plan usage.",
+    "zh": "使用 /fast 开启最快的推理速度，同时增加 plan 用量。"
+  },
+  {
+    "en": "to enable our fastest inference with increased plan usage.",
+    "zh": "开启我们最快的推理，同时增加 plan 用量。",
+    "pad": false
+  },
+  {
+    "en": "Try the Desktop app. Run 'codex app' or visit https://chatgpt.com/codex?app-landing-page=true",
+    "zh": "试试桌面版应用：运行 'codex app'，或访问 https://chatgpt.com/codex?app-landing-page=true",
+    "pad": false
+  },
+  {
+    "en": "Desktop app",
+    "zh": "桌面版应用"
+  },
+  {
+    "en": "⚠ Under-development features enabled: chronicle. Under-development features are incomplete and may behave unpredictably.",
+    "zh": "⚠ 已启用开发中功能：chronicle。开发中功能不完整，行为可能不可预测。",
+    "pad": false
+  },
+  {
+    "en": "MCP startup interrupted. The following servers were not initialized: chrome-devtools, stitch",
+    "zh": "MCP 启动已中断。以下服务器未初始化：chrome-devtools、stitch",
+    "pad": false
+  },
+  {
+    "en": "MCP startup incomplete (failed: stitch)",
+    "zh": "MCP 启动未完成（失败：stitch）",
+    "pad": false
+  },
+  {
+    "en": "Select Model and Effort",
+    "zh": "选择模型与推理强度"
+  },
+  {
+    "en": "Access legacy models by running codex -m <model_name> or in your config.toml",
+    "zh": "运行 codex -m <model_name> 或在 config.toml 中配置，即可使用旧版模型",
+    "pad": false
+  },
+  {
+    "en": "Latest frontier agentic coding model.",
+    "zh": "最新的前沿 agentic 编码模型。"
+  },
+  {
+    "en": "Small, fast, and cost-efficient model for simpler coding tasks.",
+    "zh": "小型、快速且高性价比的模型，适合简单编码任务。",
+    "pad": false
+  },
+  {
+    "en": "Balanced agentic coding model for everyday work.",
+    "zh": "均衡的 agentic 编码模型，适合日常工作。",
+    "pad": false
+  },
+  {
+    "en": "Fast and affordable agentic coding model.",
+    "zh": "快速且实惠的 agentic 编码模型。"
+  },
+  {
+    "en": "for everyday coding.",
+    "zh": "适合日常编码。"
+  },
+  {
+    "en": "coding model.",
+    "zh": "编码模型。"
+  },
+  {
+    "en": "1. gpt-5.6-sol (current)  Latest frontier agentic coding model.",
+    "zh": "1. gpt-5.6-sol（当前）  最新前沿 agentic 编码模型。",
+    "pad": false
+  },
+  {
+    "en": "Unrecognized command '/help'. Type \"/\" for a list of supported commands.",
+    "zh": "无法识别的命令 '/help'。输入 \"/\" 查看支持的命令列表。",
+    "pad": false
+  },
+  {
+    "en": "Conversation interrupted - tell the model what to do differently.",
+    "zh": "会话已中断——告诉模型需要做出哪些不同的调整。",
+    "pad": false
+  },
+  {
+    "en": "Something went wrong? Hit `/feedback` to report the",
+    "zh": "出问题了吗？用 `/feedback` 反馈",
+    "pad": false
+  },
+  {
+    "en": "issue.",
+    "zh": "问题。",
+    "pad": false
+  },
+  {
+    "en": "Hit `/feedback` to report the issue.",
+    "zh": "用 `/feedback` 反馈问题。",
+    "pad": false
+  },
+  {
+    "en": "Starting MCP servers",
+    "zh": "正在启动 MCP 服务器"
+  },
+  {
+    "en": "Booting MCP server:",
+    "zh": "启动 MCP 服务器："
+  },
+  {
+    "en": "esc to interrupt",
+    "zh": "esc 中断"
+  },
+  {
+    "en": "• esc to interrupt",
+    "zh": "• esc 中断"
+  },
+  {
+    "en": "MCP startup failed",
+    "zh": "MCP 启动失败"
+  },
+  {
+    "en": "handshaking with MCP server failed",
+    "zh": "与 MCP 服务器握手失败"
+  },
+  {
+    "en": "connection closed",
+    "zh": "连接已关闭"
+  },
+  {
+    "en": "Resume a previous session",
+    "zh": "继续之前的会话"
+  },
+  {
+    "en": "Loading sessions…",
+    "zh": "正在加载会话…"
+  },
+  {
+    "en": "focus sort/filter",
+    "zh": "聚焦 排序/筛选"
+  },
+  {
+    "en": "comfortable view",
+    "zh": "舒适视图"
+  },
+  {
+    "en": "Type to search",
+    "zh": "输入以搜索"
+  },
+  {
+    "en": "change option",
+    "zh": "切换选项"
+  },
+  {
+    "en": "All    Sort:",
+    "zh": "全部  排序："
+  },
+  {
+    "en": "Filter:",
+    "zh": "筛选："
+  },
+  {
+    "en": "start new",
+    "zh": "新建会话"
+  },
+  {
+    "en": "Created",
+    "zh": "创建于"
+  },
+  {
+    "en": "Logged in using ChatGPT",
+    "zh": "已通过 ChatGPT 登录"
+  },
+  {
+    "en": "Updating Codex via `npm install -g @openai/codex`...",
+    "zh": "正在通过 `npm install -g @openai/codex` 更新 Codex...",
+    "pad": false
+  },
+  {
+    "en": "Inspect feature flags",
+    "zh": "查看功能开关"
+  },
+  {
+    "en": "List known features with their stage and effective state",
+    "zh": "列出已知功能及其阶段与生效状态"
+  },
+  {
+    "en": "Disable a feature in config.toml",
+    "zh": "在 config.toml 中禁用某个功能"
+  },
+  {
+    "en": "Enable a feature in config.toml",
+    "zh": "在 config.toml 中启用某个功能"
+  },
+  {
+    "en": "Manage Codex plugins",
+    "zh": "管理 Codex 插件"
+  },
+  {
+    "en": "Manage external MCP servers for Codex",
+    "zh": "管理 Codex 的外部 MCP 服务器"
+  },
+  {
+    "en": "Manage login",
+    "zh": "管理登录"
+  },
+  {
+    "en": "Remove stored authentication credentials",
+    "zh": "移除已保存的登录凭据"
+  },
+  {
+    "en": "Generate shell completion scripts",
+    "zh": "生成 shell 补全脚本"
+  },
+  {
+    "en": "Shell to generate completions for",
+    "zh": "为其生成补全脚本的 shell"
+  },
+  {
+    "en": "Debugging tools",
+    "zh": "调试工具"
+  },
+  {
+    "en": "Diagnose local Codex installation, config, auth, and runtime health",
+    "zh": "诊断本地 Codex 安装、配置、认证与运行状况"
+  },
+  {
+    "en": "Update Codex to the latest version",
+    "zh": "将 Codex 更新到最新版本"
+  },
+  {
+    "en": "Start Codex as an MCP server (stdio)",
+    "zh": "以 MCP 服务器方式启动 Codex（stdio）"
+  },
+  {
+    "en": "Launch the Desktop app (opens the app installer if missing)",
+    "zh": "启动桌面版应用（若未安装则打开安装程序）"
+  },
+  {
+    "en": "Run Codex non-interactively",
+    "zh": "以非交互方式运行 Codex"
+  },
+  {
+    "en": "Run a code review non-interactively",
+    "zh": "以非交互方式运行代码审查"
+  },
+  {
+    "en": "Run commands within a Codex-provided sandbox",
+    "zh": "在 Codex 提供的沙盒中运行命令"
+  },
+  {
+    "en": "Print this message or the help of the given subcommand(s)",
+    "zh": "打印本帮助信息或指定子命令的帮助"
+  },
+  {
+    "en": "Print help (see a summary with '-h')",
+    "zh": "打印帮助（用 '-h' 查看摘要）"
+  },
+  {
+    "en": "Print help (see more with '--help')",
+    "zh": "打印帮助（用 '--help' 查看更多）"
+  },
+  {
+    "en": "Print version",
+    "zh": "打印版本"
+  },
+  {
+    "en": "Optional user prompt to start the session",
+    "zh": "用于启动会话的可选提示词"
+  },
+  {
+    "en": "Model the agent should use",
+    "zh": "Agent 应使用的模型"
+  },
+  {
+    "en": "Use open-source provider",
+    "zh": "使用开源提供商"
+  },
+  {
+    "en": "Specify which local provider to use (lmstudio or ollama). If not specified with --oss, will use config default",
+    "zh": "指定要使用的本地提供商（lmstudio 或 ollama）。未指定且使用 --oss 时，将采用配置默认值",
+    "pad": false
+  },
+  {
+    "en": "or show selection",
+    "zh": "或显示选择菜单"
+  },
+  {
+    "en": "Enable live web search. When enabled, the native Responses `web_search` tool is available to the model (no",
+    "zh": "启用实时网络搜索。启用后，模型可使用原生 Responses `web_search` 工具（无需",
+    "pad": false
+  },
+  {
+    "en": "per‑call approval)",
+    "zh": "逐次审批）",
+    "pad": false
+  },
+  {
+    "en": "Disable alternate screen mode",
+    "zh": "禁用备用屏（alt screen）模式"
+  },
+  {
+    "en": "Runs the TUI in inline mode, preserving terminal scrollback history.",
+    "zh": "以内联模式运行 TUI，保留终端滚动历史。",
+    "pad": false
+  },
+  {
+    "en": "Tell the agent to use the specified directory as its working root",
+    "zh": "让 Agent 使用指定目录作为工作根目录"
+  },
+  {
+    "en": "Additional directories that should be writable alongside the primary workspace",
+    "zh": "除主工作区外，额外允许写入的目录"
+  },
+  {
+    "en": "Select the sandbox policy to use when executing model-generated shell commands",
+    "zh": "选择执行模型生成的 shell 命令时使用的沙盒策略"
+  },
+  {
+    "en": "Route approval requests through automatic review using the workspace-write sandbox",
+    "zh": "通过 workspace-write 沙盒的自动审查来处理审批请求"
+  },
+  {
+    "en": "Configure when the model requires human approval before executing a command",
+    "zh": "配置模型执行命令前需要人工审批的时机"
+  },
+  {
+    "en": "Skip all confirmation prompts and execute commands without sandboxing. EXTREMELY DANGEROUS. Intended solely",
+    "zh": "跳过所有确认提示并在无沙盒的情况下执行命令。极其危险，仅适用于",
+    "pad": false
+  },
+  {
+    "en": "for running in environments that are externally sandboxed",
+    "zh": "在外部已沙盒化的环境中运行"
+  },
+  {
+    "en": "Run enabled hooks without requiring persisted hook trust for this invocation. DANGEROUS. Intended only for",
+    "zh": "本次调用无需持久化的 Hook 信任即可运行已启用的 Hook。危险，仅适用于",
+    "pad": false
+  },
+  {
+    "en": "automation that already vets hook sources",
+    "zh": "已审查过 Hook 来源的自动化场景"
+  },
+  {
+    "en": "Override a configuration value that would otherwise be loaded from `~/.codex/config.toml`. Use a dotted path",
+    "zh": "覆盖原本从 `~/.codex/config.toml` 加载的配置值。使用点号路径",
+    "pad": false
+  },
+  {
+    "en": "(`foo.bar.baz`) to override nested values. The `value` portion is parsed as TOML. If it fails to parse as",
+    "zh": "（如 `foo.bar.baz`）覆盖嵌套值。`value` 部分按 TOML 解析，若解析失败",
+    "pad": false
+  },
+  {
+    "en": "TOML, the raw string is used as a literal.",
+    "zh": "则将原始字符串作为字面量使用。",
+    "pad": false
+  },
+  {
+    "en": "Error out when config.toml contains fields that are not recognized by this version of Codex",
+    "zh": "当 config.toml 包含当前版本 Codex 无法识别的字段时报错"
+  },
+  {
+    "en": "Layer $CODEX_HOME/<name>.config.toml on top of the base user config",
+    "zh": "在基础用户配置之上叠加 $CODEX_HOME/<name>.config.toml"
+  },
+  {
+    "en": "If no subcommand is specified, options will be forwarded to the interactive CLI.",
+    "zh": "未指定子命令时，选项将转发给交互式 CLI。",
+    "pad": false
+  },
+  {
+    "en": "Accepted forms: `ws://host:port`, `wss://host:port`, `unix://`, or `unix://PATH`.",
+    "zh": "支持形式：`ws://host:port`、`wss://host:port`、`unix://` 或 `unix://PATH`。",
+    "pad": false
+  },
+  {
+    "en": "Print events to stdout as JSONL",
+    "zh": "以 JSONL 格式向 stdout 打印事件"
+  },
+  {
+    "en": "Run without persisting session files to disk",
+    "zh": "不将会话文件持久化到磁盘"
+  },
+  {
+    "en": "Initial instructions for the agent. If not provided as an argument (or if `-` is used), instructions are read",
+    "zh": "给 Agent 的初始指令。若未以参数提供（或使用 `-`），则从",
+    "pad": false
+  },
+  {
+    "en": "from stdin. If stdin is piped and a prompt is also provided, stdin is appended as a `<stdin>` block",
+    "zh": "标准输入读取。若 stdin 来自管道且同时提供了提示词，stdin 会以 `<stdin>` 块追加",
+    "pad": false
+  },
+  {
+    "en": "Specifies file where the last message from the agent should be written",
+    "zh": "指定用于写入 Agent 最后一条消息的文件"
+  },
+  {
+    "en": "Specifies color settings for use in the output",
+    "zh": "指定输出的颜色设置"
+  },
+  {
+    "en": "Path to a JSON Schema file describing the model's final response shape",
+    "zh": "描述模型最终回复结构的 JSON Schema 文件路径"
+  },
+  {
+    "en": "Do not load `$CODEX_HOME/config.toml`; auth still uses `CODEX_HOME`",
+    "zh": "不加载 `$CODEX_HOME/config.toml`；认证仍使用 `CODEX_HOME`"
+  },
+  {
+    "en": "Do not load user or project execpolicy `.rules` files",
+    "zh": "不加载用户或项目的 execpolicy `.rules` 文件"
+  },
+  {
+    "en": "Allow running Codex outside a Git repository",
+    "zh": "允许在 Git 仓库之外运行 Codex"
+  },
+  {
+    "en": "Name of the environment variable containing the bearer token to send to a remote app server websocket",
+    "zh": "包含要发送给远程 app server websocket 的 bearer token 的环境变量名"
+  },
+  {
+    "en": "Connect the TUI to a remote app server endpoint.",
+    "zh": "将 TUI 连接到远程 app server 端点。",
+    "pad": false
+  },
+  {
+    "en": "Review changes against the given base branch",
+    "zh": "基于给定的基准分支审查更改"
+  },
+  {
+    "en": "Review staged, unstaged, and untracked changes",
+    "zh": "审查已暂存、未暂存和未跟踪的更改"
+  },
+  {
+    "en": "Optional commit title to display in the review summary",
+    "zh": "在审查摘要中显示的可选提交标题"
+  },
+  {
+    "en": "Custom review instructions. If `-` is used, read from stdin",
+    "zh": "自定义审查指令。若使用 `-`，则从 stdin 读取"
+  },
+  {
+    "en": "Full command args to run under seatbelt",
+    "zh": "在 seatbelt 下运行的完整命令参数"
+  },
+  {
+    "en": "Disable direct network access in the supplied sandbox state",
+    "zh": "在提供的沙盒状态下禁用直接网络访问"
+  },
+  {
+    "en": "Allow the sandboxed command to bind/connect AF_UNIX sockets rooted at this path. Relative paths are resolved",
+    "zh": "允许沙盒命令绑定/连接以该路径为根的 AF_UNIX socket。相对路径将基于",
+    "pad": false
+  },
+  {
+    "en": "against the current directory. Repeat to allow multiple paths",
+    "zh": "当前目录解析。可重复指定以允许多个路径"
+  },
+  {
+    "en": "While the command runs, capture macOS sandbox denials via `log stream` and print them after exit",
+    "zh": "命令运行期间通过 `log stream` 捕获 macOS 沙盒拒绝记录，并在退出后打印"
+  },
+  {
+    "en": "Include managed requirements while resolving an explicit permissions profile",
+    "zh": "解析显式权限配置时包含托管要求"
+  },
+  {
+    "en": "Working directory used for profile resolution and command execution",
+    "zh": "用于配置解析和命令执行的工作目录"
+  },
+  {
+    "en": "Named permissions profile to apply from the active configuration stack",
+    "zh": "从当前配置栈中应用的命名权限配置"
+  },
+  {
+    "en": "JSON value from `codex/sandbox-state-meta` to apply directly",
+    "zh": "直接应用的 `codex/sandbox-state-meta` JSON 值"
+  },
+  {
+    "en": "Remove an installed plugin from local config and cache",
+    "zh": "从本地配置与缓存中移除已安装的插件"
+  },
+  {
+    "en": "List plugins available from configured marketplace snapshots",
+    "zh": "列出已配置 marketplace 快照中可用的插件"
+  },
+  {
+    "en": "Add, list, upgrade, or remove configured plugin marketplaces",
+    "zh": "添加、列出、升级或移除已配置的插件 marketplace"
+  },
+  {
+    "en": "Render the raw model catalog as JSON",
+    "zh": "以 JSON 输出原始模型目录"
+  },
+  {
+    "en": "Render the model-visible prompt input list as JSON",
+    "zh": "以 JSON 输出模型可见的提示输入列表"
+  },
+  {
+    "en": "Tooling: helps debug the app server",
+    "zh": "工具：帮助调试 app server"
+  },
+  {
+    "en": "PLUGIN",
+    "zh": "插件"
+  },
+  {
+    "en": "STATUS",
+    "zh": "状态"
+  },
+  {
+    "en": "VERSION",
+    "zh": "版本"
+  },
+  {
+    "en": "PATH",
+    "zh": "路径"
+  },
+  {
+    "en": "Name",
+    "zh": "名称"
+  },
+  {
+    "en": "Args",
+    "zh": "参数"
+  },
+  {
+    "en": "Status",
+    "zh": "状态"
+  },
+  {
+    "en": "Auth",
+    "zh": "认证"
+  },
+  {
+    "en": "installed, enabled",
+    "zh": "已安装，已启用"
+  },
+  {
+    "en": "not installed",
+    "zh": "未安装"
+  },
+  {
+    "en": "Unsupported",
+    "zh": "不支持"
+  },
+  {
+    "en": "Checking MCP...",
+    "zh": "正在检查 MCP..."
+  },
+  {
+    "en": "Checking git...",
+    "zh": "正在检查 git..."
+  },
+  {
+    "en": "Checking auth...",
+    "zh": "正在检查认证..."
+  },
+  {
+    "en": "Checking state...",
+    "zh": "正在检查状态..."
+  },
+  {
+    "en": "Checking system...",
+    "zh": "正在检查系统..."
+  },
+  {
+    "en": "Checking search...",
+    "zh": "正在检查搜索..."
+  },
+  {
+    "en": "Checking config...",
+    "zh": "正在检查配置..."
+  },
+  {
+    "en": "Checking runtime...",
+    "zh": "正在检查运行时..."
+  },
+  {
+    "en": "Checking updates...",
+    "zh": "正在检查更新..."
+  },
+  {
+    "en": "Checking network...",
+    "zh": "正在检查网络..."
+  },
+  {
+    "en": "Checking sandbox...",
+    "zh": "正在检查沙盒..."
+  },
+  {
+    "en": "Checking terminal...",
+    "zh": "正在检查终端..."
+  },
+  {
+    "en": "Checking websocket...",
+    "zh": "正在检查 websocket..."
+  },
+  {
+    "en": "Checking app-server...",
+    "zh": "正在检查 app-server..."
+  },
+  {
+    "en": "Checking installation...",
+    "zh": "正在检查安装..."
+  },
+  {
+    "en": "Checking terminal title...",
+    "zh": "正在检查终端标题..."
+  },
+  {
+    "en": "Checking thread inventory...",
+    "zh": "正在检查会话清单..."
+  },
+  {
+    "en": "Checking provider reachability...",
+    "zh": "正在检查提供商可达性..."
+  },
+  {
+    "en": "Yes, continue",
+    "zh": "是，继续"
+  },
+  {
+    "en": "No, quit",
+    "zh": "否，退出"
+  },
+  {
+    "en": "Options:",
+    "zh": "选项："
+  },
+  {
+    "en": "Run the app server or related tooling",
+    "zh": "运行 app server 或相关工具"
+  },
+  {
+    "en": "[experimental] Run the app server or related tooling",
+    "zh": "[实验性] 运行 app server 或相关工具"
+  },
+  {
+    "en": "Manage the app-server daemon with remote control enabled",
+    "zh": "管理启用远程控制的 app-server 守护进程"
+  },
+  {
+    "en": "[experimental] Manage the app-server daemon with remote control enabled",
+    "zh": "[实验性] 管理启用远程控制的 app-server 守护进程"
+  },
+  {
+    "en": "Apply the latest diff produced by Codex agent as a `git apply` to your local working tree [aliases: a]",
+    "zh": "将 Codex Agent 生成的最新 diff 作为 `git apply` 应用到本地工作树 [别名: a]"
+  },
+  {
+    "en": "Resume a previous interactive session (picker by default; use --last to continue the most recent)",
+    "zh": "继续之前的交互式会话（默认弹出选择器；用 --last 继续最近一次会话）"
+  },
+  {
+    "en": "Archive a saved session by id or session name",
+    "zh": "按 id 或会话名归档已保存的会话"
+  },
+  {
+    "en": "Permanently delete a saved session by id or session name",
+    "zh": "按 id 或会话名永久删除已保存的会话"
+  },
+  {
+    "en": "Unarchive a saved session by id or session name",
+    "zh": "按 id 或会话名取消归档已保存的会话"
+  },
+  {
+    "en": "Fork a previous interactive session (picker by default; use --last to fork the most recent)",
+    "zh": "派生之前的交互式会话（默认弹出选择器；用 --last 派生最近一次会话）"
+  },
+  {
+    "en": "[EXPERIMENTAL] Browse tasks from Codex Cloud and apply changes locally",
+    "zh": "[实验性] 浏览 Codex Cloud 的任务并在本地应用更改"
+  },
+  {
+    "en": "[EXPERIMENTAL] Run the standalone exec-server service",
+    "zh": "[实验性] 运行独立的 exec-server 服务"
+  },
+  {
+    "en": "Resume a previous session by id or pick the most recent with --last",
+    "zh": "按 id 继续之前的会话，或用 --last 选择最近一次会话"
+  },
+  {
+    "en": "Run Codex non-interactively [aliases: e]",
+    "zh": "以非交互方式运行 Codex [别名: e]"
+  },
+  {
+    "en": "Run a code review against the current repository",
+    "zh": "对当前仓库运行代码审查"
+  },
+  {
+    "en": "Optional image(s) to attach to the initial prompt",
+    "zh": "附加到初始提示词的可选图片"
+  },
+  {
+    "en": "[possible values: read-only, workspace-write, danger-full-access]",
+    "zh": "[可选值：read-only、workspace-write、danger-full-access]"
+  },
+  {
+    "en": "Only run \"trusted\" commands (e.g. ls, cat, sed) without asking for user approval. Will escalate to the user if the model proposes a command that is not in the \"trusted\" set",
+    "zh": "仅运行“受信任”命令（如 ls、cat、sed），无需征求用户批准。若模型提议的命令不在“受信任”集合中，将升级给用户审批",
+    "pad": false
+  },
+  {
+    "en": "The model decides when to ask the user for approval",
+    "zh": "由模型决定何时征求用户批准"
+  },
+  {
+    "en": "Never ask for user approval Execution failures are immediately returned to the model",
+    "zh": "从不征求用户批准；执行失败会立即返回给模型"
+  },
+  {
+    "en": "Enable a feature (repeatable). Equivalent to `-c features.<name>=true`",
+    "zh": "启用某个功能（可重复）。等价于 `-c features.<name>=true`"
+  },
+  {
+    "en": "Disable a feature (repeatable). Equivalent to `-c features.<name>=false`",
+    "zh": "禁用某个功能（可重复）。等价于 `-c features.<name>=false`"
+  },
+  {
+    "en": "[possible values: always, never, auto]",
+    "zh": "[可选值：always、never、auto]"
+  },
+  {
+    "en": "Examples:",
+    "zh": "示例："
+  },
+  {
+    "en": "[default: auto]",
+    "zh": "[默认：auto]"
+  },
+  {
+    "en": "Use a dotted path",
+    "zh": "使用点号路径"
+  }
+]

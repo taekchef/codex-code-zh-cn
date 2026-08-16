@@ -1,0 +1,77 @@
+[
+  {
+    "id": "codex-zh-start",
+    "en": "Use `codex-zh` instead of `codex` to get a Simplified Chinese terminal UI. Your original `codex` stays untouched.",
+    "zh": "用 `codex-zh` 代替 `codex` 启动，即可获得简体中文终端界面；原来的 `codex` 不受影响。"
+  },
+  {
+    "id": "codex-zh-raw",
+    "en": "Run `codex-zh --codex-zh-no-translate ...` or set CODEX_ZH_DISABLE=1 to bypass translation when pasting output into scripts.",
+    "zh": "需要把输出粘贴进脚本时，用 `codex-zh --codex-zh-no-translate` 或设置 CODEX_ZH_DISABLE=1 关闭翻译。"
+  },
+  {
+    "id": "desktop-locale",
+    "en": "For the Codex desktop app, the installer sets `[desktop] localeOverride = \"zh-CN\"` in ~/.codex/config.toml, which enables the built-in Chinese translation.",
+    "zh": "桌面版 Codex：安装脚本会在 ~/.codex/config.toml 写入 `[desktop] localeOverride = \"zh-CN\"`，启用内置中文翻译。"
+  },
+  {
+    "id": "model-shortcut",
+    "en": "Inside the TUI, press Ctrl+X Ctrl+/ (or type /model) to switch models without leaving the conversation.",
+    "zh": "在 TUI 里按 Ctrl+X Ctrl+/（或输入 /model）即可原地切换模型。"
+  },
+  {
+    "id": "resume-session",
+    "en": "Use `codex-zh resume` (alias: r) to continue a previous session, and `--last` to jump straight to the most recent one.",
+    "zh": "用 `codex-zh resume`（别名 r）继续历史会话，加 `--last` 直接回到最近一次会话。"
+  },
+  {
+    "id": "sandbox-default",
+    "en": "Start with `codex-zh --sandbox read-only` for exploration and escalate to workspace-write only when the agent needs to edit files.",
+    "zh": "探索阶段用 `codex-zh --sandbox read-only`，只有需要改文件时才升级到 workspace-write。"
+  },
+  {
+    "id": "exec-scripts",
+    "en": "For non-interactive automation prefer `codex-zh exec --sandbox read-only \"...\"`; the wrapper works the same for subcommands.",
+    "zh": "非交互自动化建议 `codex-zh exec --sandbox read-only \"...\"`；包装器对所有子命令同样生效。"
+  },
+  {
+    "id": "config-override",
+    "en": "Temporarily override any setting without editing files: `codex-zh -c model=\"gpt-5.6-sol\"`.",
+    "zh": "不想改配置文件时，用 `codex-zh -c model=\"gpt-5.6-sol\"` 临时覆盖任意设置。"
+  },
+  {
+    "id": "hooks-review",
+    "en": "When a hook needs review, press Space to toggle trust per hook, Enter to confirm, Esc to go back — all labels are localized.",
+    "zh": "Hook 需要审核时：空格逐项切换信任、回车确认、Esc 返回——这些标签都会被汉化。"
+  },
+  {
+    "id": "update-codex",
+    "en": "Keep Codex itself current with `npm install -g @openai/codex@latest`; codex-code-zh-cn wraps any version and re-runs install after upgrades.",
+    "zh": "用 `npm install -g @openai/codex@latest` 保持 Codex 最新；codex-code-zh-cn 通过包装器适配任意版本，升级后重跑安装脚本即可。"
+  },
+  {
+    "id": "doctor",
+    "en": "Run `codex-zh-doctor` to verify the wrapper, node-pty, config overlay and installed Codex version in one shot.",
+    "zh": "运行 `codex-zh-doctor` 一次性检查包装器、node-pty、配置覆盖和已安装的 Codex 版本。"
+  },
+  {
+    "id": "uninstall",
+    "en": "`uninstall.sh` restores the config.toml backup and removes the wrapper symlink; your Codex data and auth are never touched.",
+    "zh": "`uninstall.sh` 会恢复 config.toml 备份并移除包装器软链；Codex 的数据和登录状态不会被触碰。"
+  },
+  {
+    "id": "width-safe",
+    "en": "Every translated string is padded to the original display width, so box borders, menus and progress bars keep their alignment.",
+    "zh": "每条翻译都会补齐到原文的显示宽度，所以边框、菜单和进度条的对齐不会被破坏。"
+  },
+  {
+    "id": "sticky-prompt",
+    "en": "Paste multi-line prompts with Ctrl+V in most terminals; use /rewind or /compact when a thread grows too long.",
+    "zh": "多行提示在多数终端可用 Ctrl+V 粘贴；会话太长时用 /rewind 或 /compact 收窄上下文。"
+  },
+  {
+    "id": "term-width",
+    "en": "If the TUI looks misaligned after resizing, make sure your terminal is at least 80 columns wide; the wrapper follows terminal resize events.",
+    "zh": "调整窗口后如果界面错位，请确认终端宽度不小于 80 列；包装器会跟随终端 resize 事件。"
+  }
+]

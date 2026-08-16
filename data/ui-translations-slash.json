@@ -1,0 +1,206 @@
+[
+  {
+    "en": "choose what model and reasoning effort to use",
+    "zh": "选择要使用的模型与推理强度"
+  },
+  {
+    "en": "choose what Codex is allowed to do",
+    "zh": "选择允许 Codex 做什么"
+  },
+  {
+    "en": "remap TUI shortcuts",
+    "zh": "重新映射 TUI 快捷键"
+  },
+  {
+    "en": "toggle Vim mode for the composer",
+    "zh": "切换输入框的 Vim 模式"
+  },
+  {
+    "en": "toggle experimental features",
+    "zh": "切换实验性功能"
+  },
+  {
+    "en": "approve one retry of a recent auto-review denial",
+    "zh": "批准重试最近一次被自动审查拒绝的操作"
+  },
+  {
+    "en": "include current selection, open files, and other context from your IDE",
+    "zh": "包含来自 IDE 的当前选中内容、打开的文件和其他上下文"
+  },
+  {
+    "en": "1.5x speed, increased usage",
+    "zh": "1.5 倍速度，用量增加"
+  },
+  {
+    "en": "send logs to maintainers",
+    "zh": "向维护者发送日志"
+  },
+  {
+    "en": "start a new chat during a conversation",
+    "zh": "在会话过程中开启新对话"
+  },
+  {
+    "en": "create an AGENTS.md file with instructions for Codex",
+    "zh": "创建包含 Codex 说明的 AGENTS.md 文件"
+  },
+  {
+    "en": "summarize conversation to prevent hitting the context limit",
+    "zh": "压缩会话摘要，避免触达上下文上限"
+  },
+  {
+    "en": "review my current changes and find issues",
+    "zh": "审查当前更改并找出问题"
+  },
+  {
+    "en": "rename the current thread",
+    "zh": "重命名当前会话"
+  },
+  {
+    "en": "resume a saved chat",
+    "zh": "继续已保存的对话"
+  },
+  {
+    "en": "archive this session and exit",
+    "zh": "归档当前会话并退出"
+  },
+  {
+    "en": "permanently delete this session and exit",
+    "zh": "永久删除当前会话并退出"
+  },
+  {
+    "en": "clear the terminal and start a new chat",
+    "zh": "清空终端并开始新对话"
+  },
+  {
+    "en": "fork the current chat",
+    "zh": "派生当前对话"
+  },
+  {
+    "en": "continue this session in the Desktop app",
+    "zh": "在桌面版应用中继续当前会话"
+  },
+  {
+    "en": "exit Codex",
+    "zh": "退出 Codex"
+  },
+  {
+    "en": "copy last response as markdown",
+    "zh": "将最后一条回复复制为 markdown"
+  },
+  {
+    "en": "toggle raw scrollback mode for copy-friendly terminal selection",
+    "zh": "切换原始滚动模式，便于在终端中复制选择"
+  },
+  {
+    "en": "show git diff (including untracked files)",
+    "zh": "显示 git diff（含未跟踪文件）"
+  },
+  {
+    "en": "mention a file",
+    "zh": "提及某个文件"
+  },
+  {
+    "en": "use skills to improve how Codex performs specific tasks",
+    "zh": "使用技能提升 Codex 执行特定任务的能力"
+  },
+  {
+    "en": "import setup, this project, and recent chats from Claude Code",
+    "zh": "从 Claude Code 导入设置、本项目与最近对话"
+  },
+  {
+    "en": "view and manage lifecycle hooks",
+    "zh": "查看和管理生命周期 Hook"
+  },
+  {
+    "en": "show current session configuration and token usage",
+    "zh": "显示当前会话配置与 Token 用量"
+  },
+  {
+    "en": "view account usage or use a usage limit reset",
+    "zh": "查看账户用量或使用用量限额重置"
+  },
+  {
+    "en": "show config layers and requirement sources for debugging",
+    "zh": "显示配置层与需求来源，便于调试"
+  },
+  {
+    "en": "configure which items appear in the terminal title",
+    "zh": "配置终端标题中显示的项目"
+  },
+  {
+    "en": "configure which items appear in the status line",
+    "zh": "配置状态栏中显示的项目"
+  },
+  {
+    "en": "choose a syntax highlighting theme",
+    "zh": "选择语法高亮主题"
+  },
+  {
+    "en": "choose or hide the terminal pet",
+    "zh": "选择或隐藏终端宠物"
+  },
+  {
+    "en": "list background terminals",
+    "zh": "列出后台终端"
+  },
+  {
+    "en": "stop all background terminals",
+    "zh": "停止所有后台终端"
+  },
+  {
+    "en": "choose a communication style for Codex",
+    "zh": "为 Codex 选择沟通风格"
+  },
+  {
+    "en": "switch to Plan mode",
+    "zh": "切换到 Plan 模式"
+  },
+  {
+    "en": "set or view the goal for a long-running task",
+    "zh": "设置或查看长任务的 Goal"
+  },
+  {
+    "en": "switch the active agent thread",
+    "zh": "切换当前 Agent 线程"
+  },
+  {
+    "en": "start a side conversation in an ephemeral fork",
+    "zh": "在临时派生会话中开启旁路对话"
+  },
+  {
+    "en": "set up elevated agent sandbox",
+    "zh": "设置提权的 Agent 沙盒"
+  },
+  {
+    "en": "let sandbox read a directory: /sandbox-add-read-dir <absolute_path>",
+    "zh": "允许沙盒读取目录：/sandbox-add-read-dir <绝对路径>"
+  },
+  {
+    "en": "configure memory use and generation",
+    "zh": "配置记忆的使用与生成"
+  },
+  {
+    "en": "list configured MCP tools; use /mcp verbose for details",
+    "zh": "列出已配置的 MCP 工具；用 /mcp verbose 查看详情"
+  },
+  {
+    "en": "manage apps",
+    "zh": "管理应用"
+  },
+  {
+    "en": "browse plugins",
+    "zh": "浏览插件"
+  },
+  {
+    "en": "log out of Codex",
+    "zh": "退出 Codex 登录"
+  },
+  {
+    "en": "print the rollout file path",
+    "zh": "打印 rollout 文件路径"
+  },
+  {
+    "en": "test approval request",
+    "zh": "测试审批请求"
+  }
+]

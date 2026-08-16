@@ -1,0 +1,741 @@
+[
+  {
+    "en": "You are in ",
+    "zh": "当前目录："
+  },
+  {
+    "en": "directory",
+    "zh": "目录",
+    "word": true
+  },
+  {
+    "en": "contents",
+    "zh": "内容",
+    "word": true
+  },
+  {
+    "en": "untrusted",
+    "zh": "不受信任",
+    "word": true
+  },
+  {
+    "en": "prompt",
+    "zh": "提示词",
+    "word": true
+  },
+  {
+    "en": "injection",
+    "zh": "注入",
+    "word": true
+  },
+  {
+    "en": "higher",
+    "zh": "更高",
+    "word": true
+  },
+  {
+    "en": "risk",
+    "zh": "风险",
+    "word": true
+  },
+  {
+    "en": "allows",
+    "zh": "允许",
+    "word": true
+  },
+  {
+    "en": "project-local",
+    "zh": "项目本地",
+    "word": true
+  },
+  {
+    "en": "config,",
+    "zh": "配置，",
+    "word": true
+  },
+  {
+    "en": "hooks,",
+    "zh": "Hook，",
+    "word": true
+  },
+  {
+    "en": "policies",
+    "zh": "策略",
+    "word": true
+  },
+  {
+    "en": "load.",
+    "zh": "加载",
+    "word": true
+  },
+  {
+    "en": "comes",
+    "zh": "带来",
+    "word": true
+  },
+  {
+    "en": "typing",
+    "zh": "输入中",
+    "word": true
+  },
+  {
+    "en": "waiting",
+    "zh": "等待中",
+    "word": true
+  },
+  {
+    "en": "working",
+    "zh": "工作中",
+    "word": true
+  },
+  {
+    "en": "thinking",
+    "zh": "思考中",
+    "word": true
+  },
+  {
+    "en": "interrupted",
+    "zh": "已中断",
+    "word": true
+  },
+  {
+    "en": "completed",
+    "zh": "已完成",
+    "word": true
+  },
+  {
+    "en": "cancelled",
+    "zh": "已取消",
+    "word": true
+  },
+  {
+    "en": "running",
+    "zh": "运行中",
+    "word": true
+  },
+  {
+    "en": "loading",
+    "zh": "加载中",
+    "word": true
+  },
+  {
+    "en": "retrying",
+    "zh": "重试中",
+    "word": true
+  },
+  {
+    "en": "paused",
+    "zh": "已暂停",
+    "word": true
+  },
+  {
+    "en": "queued",
+    "zh": "已排队",
+    "word": true
+  },
+  {
+    "en": "draft",
+    "zh": "草稿",
+    "word": true
+  },
+  {
+    "en": "approved",
+    "zh": "已批准",
+    "word": true
+  },
+  {
+    "en": "denied",
+    "zh": "已拒绝",
+    "word": true
+  },
+  {
+    "en": "allowed",
+    "zh": "已允许",
+    "word": true
+  },
+  {
+    "en": "blocked",
+    "zh": "已阻止",
+    "word": true
+  },
+  {
+    "en": "failed",
+    "zh": "失败",
+    "word": true
+  },
+  {
+    "en": "finished",
+    "zh": "已完成",
+    "word": true
+  },
+  {
+    "en": "error",
+    "zh": "错误",
+    "word": true
+  },
+  {
+    "en": "warning",
+    "zh": "警告",
+    "word": true
+  },
+  {
+    "en": "info",
+    "zh": "信息",
+    "word": true
+  },
+  {
+    "en": "success",
+    "zh": "成功",
+    "word": true
+  },
+  {
+    "en": "saving",
+    "zh": "保存中",
+    "word": true
+  },
+  {
+    "en": "searching",
+    "zh": "搜索中",
+    "word": true
+  },
+  {
+    "en": "reading",
+    "zh": "读取中",
+    "word": true
+  },
+  {
+    "en": "writing",
+    "zh": "写入中",
+    "word": true
+  },
+  {
+    "en": "executing",
+    "zh": "执行中",
+    "word": true
+  },
+  {
+    "en": "building",
+    "zh": "构建中",
+    "word": true
+  },
+  {
+    "en": "installing",
+    "zh": "安装中",
+    "word": true
+  },
+  {
+    "en": "downloading",
+    "zh": "下载中",
+    "word": true
+  },
+  {
+    "en": "uploading",
+    "zh": "上传中",
+    "word": true
+  },
+  {
+    "en": "connecting",
+    "zh": "连接中",
+    "word": true
+  },
+  {
+    "en": "processing",
+    "zh": "处理中",
+    "word": true
+  },
+  {
+    "en": "analyzing",
+    "zh": "分析中",
+    "word": true
+  },
+  {
+    "en": "planning",
+    "zh": "规划中",
+    "word": true
+  },
+  {
+    "en": "reviewing",
+    "zh": "审查中",
+    "word": true
+  },
+  {
+    "en": "compiling",
+    "zh": "编译中",
+    "word": true
+  },
+  {
+    "en": "testing",
+    "zh": "测试中",
+    "word": true
+  },
+  {
+    "en": "rendering",
+    "zh": "渲染中",
+    "word": true
+  },
+  {
+    "en": "starting",
+    "zh": "启动中",
+    "word": true
+  },
+  {
+    "en": "stopping",
+    "zh": "停止中",
+    "word": true
+  },
+  {
+    "en": "pending",
+    "zh": "等待中",
+    "word": true
+  },
+  {
+    "en": "model",
+    "zh": "模型",
+    "word": true
+  },
+  {
+    "en": "models",
+    "zh": "模型",
+    "word": true
+  },
+  {
+    "en": "provider",
+    "zh": "提供商",
+    "word": true
+  },
+  {
+    "en": "session",
+    "zh": "会话",
+    "word": true
+  },
+  {
+    "en": "sessions",
+    "zh": "会话",
+    "word": true
+  },
+  {
+    "en": "thread",
+    "zh": "会话",
+    "word": true
+  },
+  {
+    "en": "threads",
+    "zh": "会话",
+    "word": true
+  },
+  {
+    "en": "conversation",
+    "zh": "会话",
+    "word": true
+  },
+  {
+    "en": "conversations",
+    "zh": "会话",
+    "word": true
+  },
+  {
+    "en": "history",
+    "zh": "历史",
+    "word": true
+  },
+  {
+    "en": "settings",
+    "zh": "设置",
+    "word": true
+  },
+  {
+    "en": "options",
+    "zh": "选项",
+    "word": true
+  },
+  {
+    "en": "help",
+    "zh": "帮助",
+    "word": true
+  },
+  {
+    "en": "close",
+    "zh": "关闭",
+    "word": true
+  },
+  {
+    "en": "back",
+    "zh": "返回",
+    "word": true
+  },
+  {
+    "en": "save",
+    "zh": "保存",
+    "word": true
+  },
+  {
+    "en": "delete",
+    "zh": "删除",
+    "word": true
+  },
+  {
+    "en": "edit",
+    "zh": "编辑",
+    "word": true
+  },
+  {
+    "en": "copy",
+    "zh": "复制",
+    "word": true
+  },
+  {
+    "en": "paste",
+    "zh": "粘贴",
+    "word": true
+  },
+  {
+    "en": "search",
+    "zh": "搜索",
+    "word": true
+  },
+  {
+    "en": "filter",
+    "zh": "筛选",
+    "word": true
+  },
+  {
+    "en": "refresh",
+    "zh": "刷新",
+    "word": true
+  },
+  {
+    "en": "retry",
+    "zh": "重试",
+    "word": true
+  },
+  {
+    "en": "skip",
+    "zh": "跳过",
+    "word": true
+  },
+  {
+    "en": "accept",
+    "zh": "接受",
+    "word": true
+  },
+  {
+    "en": "decline",
+    "zh": "拒绝",
+    "word": true
+  },
+  {
+    "en": "cancel",
+    "zh": "取消",
+    "word": true
+  },
+  {
+    "en": "continue",
+    "zh": "继续",
+    "word": true
+  },
+  {
+    "en": "confirm",
+    "zh": "确认",
+    "word": true
+  },
+  {
+    "en": "approve",
+    "zh": "批准",
+    "word": true
+  },
+  {
+    "en": "reject",
+    "zh": "拒绝",
+    "word": true
+  },
+  {
+    "en": "allow",
+    "zh": "允许",
+    "word": true
+  },
+  {
+    "en": "deny",
+    "zh": "拒绝",
+    "word": true
+  },
+  {
+    "en": "yes",
+    "zh": "是",
+    "word": true
+  },
+  {
+    "en": "no",
+    "zh": "否",
+    "word": true
+  },
+  {
+    "en": "enabled",
+    "zh": "已启用",
+    "word": true
+  },
+  {
+    "en": "disabled",
+    "zh": "已禁用",
+    "word": true
+  },
+  {
+    "en": "installed",
+    "zh": "已安装",
+    "word": true
+  },
+  {
+    "en": "updated",
+    "zh": "已更新",
+    "word": true
+  },
+  {
+    "en": "available",
+    "zh": "可用",
+    "word": true
+  },
+  {
+    "en": "default",
+    "zh": "默认",
+    "word": true
+  },
+  {
+    "en": "custom",
+    "zh": "自定义",
+    "word": true
+  },
+  {
+    "en": "advanced",
+    "zh": "高级",
+    "word": true
+  },
+  {
+    "en": "general",
+    "zh": "通用",
+    "word": true
+  },
+  {
+    "en": "language",
+    "zh": "语言",
+    "word": true
+  },
+  {
+    "en": "theme",
+    "zh": "主题",
+    "word": true
+  },
+  {
+    "en": "plugins",
+    "zh": "插件",
+    "word": true
+  },
+  {
+    "en": "plugin",
+    "zh": "插件",
+    "word": true
+  },
+  {
+    "en": "hooks",
+    "zh": "Hook",
+    "word": true
+  },
+  {
+    "en": "skills",
+    "zh": "技能",
+    "word": true
+  },
+  {
+    "en": "tools",
+    "zh": "工具",
+    "word": true
+  },
+  {
+    "en": "memory",
+    "zh": "记忆",
+    "word": true
+  },
+  {
+    "en": "sandbox",
+    "zh": "沙盒",
+    "word": true
+  },
+  {
+    "en": "permissions",
+    "zh": "权限",
+    "word": true
+  },
+  {
+    "en": "shortcuts",
+    "zh": "快捷键",
+    "word": true
+  },
+  {
+    "en": "notifications",
+    "zh": "通知",
+    "word": true
+  },
+  {
+    "en": "appearance",
+    "zh": "外观",
+    "word": true
+  },
+  {
+    "en": "terminal",
+    "zh": "终端",
+    "word": true
+  },
+  {
+    "en": "output",
+    "zh": "输出",
+    "word": true
+  },
+  {
+    "en": "input",
+    "zh": "输入",
+    "word": true
+  },
+  {
+    "en": "version",
+    "zh": "版本",
+    "word": true
+  },
+  {
+    "en": "update",
+    "zh": "更新",
+    "word": true
+  },
+  {
+    "en": "install",
+    "zh": "安装",
+    "word": true
+  },
+  {
+    "en": "uninstall",
+    "zh": "卸载",
+    "word": true
+  },
+  {
+    "en": "restart",
+    "zh": "重启",
+    "word": true
+  },
+  {
+    "en": "quit",
+    "zh": "退出",
+    "word": true
+  },
+  {
+    "en": "exit",
+    "zh": "退出",
+    "word": true
+  },
+  {
+    "en": "done",
+    "zh": "完成",
+    "word": true
+  },
+  {
+    "en": "ready",
+    "zh": "就绪",
+    "word": true
+  },
+  {
+    "en": "unknown",
+    "zh": "未知",
+    "word": true
+  },
+  {
+    "en": "none",
+    "zh": "无",
+    "word": true
+  },
+  {
+    "en": "all",
+    "zh": "全",
+    "word": true
+  },
+  {
+    "en": "on",
+    "zh": "开",
+    "word": true
+  },
+  {
+    "en": "off",
+    "zh": "关",
+    "word": true
+  },
+  {
+    "en": "more",
+    "zh": "更多",
+    "word": true
+  },
+  {
+    "en": "less",
+    "zh": "收起",
+    "word": true
+  },
+  {
+    "en": "details",
+    "zh": "详情",
+    "word": true
+  },
+  {
+    "en": "summary",
+    "zh": "摘要",
+    "word": true
+  },
+  {
+    "en": "show",
+    "zh": "显示",
+    "word": true
+  },
+  {
+    "en": "hide",
+    "zh": "隐藏",
+    "word": true
+  },
+  {
+    "en": "view",
+    "zh": "查看",
+    "word": true
+  },
+  {
+    "en": "open",
+    "zh": "打开",
+    "word": true
+  },
+  {
+    "en": "clear",
+    "zh": "清除",
+    "word": true
+  },
+  {
+    "en": "select",
+    "zh": "选择",
+    "word": true
+  },
+  {
+    "en": "choose",
+    "zh": "选择",
+    "word": true
+  },
+  {
+    "en": "checking",
+    "zh": "检查中",
+    "word": true
+  },
+  {
+    "en": "connected",
+    "zh": "已连接",
+    "word": true
+  },
+  {
+    "en": "disconnected",
+    "zh": "已断开",
+    "word": true
+  },
+  {
+    "en": "authenticated",
+    "zh": "已认证",
+    "word": true
+  }
+]

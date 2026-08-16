@@ -1,0 +1,47 @@
+{
+  "name": "codex-code-zh-cn",
+  "version": "1.0.0",
+  "description": "OpenAI Codex CLI 简体中文本地化扩展：实时汉化终端界面、状态动词与提示，并启用桌面版中文。",
+  "license": "MIT",
+  "type": "commonjs",
+  "bin": {
+    "codex-zh": "bin/codex-zh.js",
+    "codex-zh-doctor": "bin/codex-zh-doctor.js"
+  },
+  "main": "lib/translator.js",
+  "files": [
+    "bin",
+    "lib",
+    "data",
+    "verbs",
+    "tips",
+    "settings-overlay.toml",
+    "install.sh",
+    "uninstall.sh",
+    "doctor.sh",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "node --test tests/*.test.js",
+    "lint": "node scripts/validate-data.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "node-pty": "^1.1.0"
+  },
+  "keywords": [
+    "codex",
+    "openai",
+    "chinese",
+    "zh-cn",
+    "localization",
+    "i18n",
+    "cli"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/taekchef/codex-code-zh-cn.git"
+  }
+}
