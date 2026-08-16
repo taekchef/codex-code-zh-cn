@@ -125,6 +125,7 @@ Codex CLI 输出 ──► ANSI 分词器 ──► 文本段 ──► 最长�
 | `data/ui-translations-extra.json` | 启动/信任、MCP、模型选择、帮助、doctor 等界面词条 |
 | `data/ui-translations-slash.json` | `/` 命令面板说明翻译 |
 | `data/ui-translations-words.json` | 单个 UI 词汇（默认按整词匹配） |
+| `data/ui-translations-source.json` | 从 openai/codex 0.147.0 源码筛选补译的界面词条 |
 | `data/ui-patterns.json` | 含 `${变量}` 的动态文本模式 |
 | `verbs/zh-CN.json` | 状态栏动词（唯一数据源：Thinking/Working/Checking…） |
 | `tips/zh-CN.json` | 中文使用提示（唯一数据源） |

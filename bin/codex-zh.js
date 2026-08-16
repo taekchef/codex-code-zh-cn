@@ -76,6 +76,7 @@ function loadEntries() {
     path.join(__dirname, '..', 'data', 'ui-translations-extra.json'),
     path.join(__dirname, '..', 'data', 'ui-translations-slash.json'),
     path.join(__dirname, '..', 'data', 'ui-translations-words.json'),
+    path.join(__dirname, '..', 'data', 'ui-translations-source.json'),
     path.join(__dirname, '..', 'data', 'ui-patterns.json'),
     path.join(__dirname, '..', 'verbs', 'zh-CN.json'),
   ];

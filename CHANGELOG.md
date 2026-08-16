@@ -1,3 +1,20 @@
+## v1.0.2（2026-08-16）
+
+### 新增
+
+- 从 openai/codex rust-v0.147.0 源码候选池中人工筛选并补译 250 条界面词条（认证/登录、用量、审批、插件/MCP、调试等），去重词条总数达到 976
+- scripts/verify-release-state.js：package.json / CHANGELOG / tag / GitHub Release 对齐校验
+
+### 改进
+
+- /model 切换与 max 推理强度翻译微调
+
+### 修复
+
+- Windows：优先解析原生 codex.exe 并注入 CODEX_MANAGED_PACKAGE_ROOT，避免 ConPTY 无法直接执行 .cmd shim
+- Windows 安装脚本：对非 git 安装目录的更新路径先清理再克隆
+- 输出管道 EPIPE 保护（codex-zh --help | head 不再报错）
+
 ## v1.0.1（2026-08-16）
 
 ### 修复

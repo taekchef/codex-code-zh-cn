@@ -61,7 +61,7 @@ healthy = check('node-pty 依赖', () => {
 }) && healthy;
 
 healthy = check('翻译数据', () => {
-  const files = ['ui-translations.json', 'ui-translations-extra.json', 'ui-translations-slash.json', 'ui-translations-words.json', 'ui-patterns.json'];
+  const files = ['ui-translations.json', 'ui-translations-extra.json', 'ui-translations-slash.json', 'ui-translations-words.json', 'ui-translations-source.json', 'ui-patterns.json'];
   const all = [];
   for (const f of files) {
     const p = path.join(ROOT, 'data', f);

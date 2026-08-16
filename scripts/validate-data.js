@@ -21,6 +21,7 @@ const FILES = [
   'data/ui-translations-extra.json',
   'data/ui-translations-slash.json',
   'data/ui-translations-words.json',
+  'data/ui-translations-source.json',
   'data/ui-patterns.json',
   'verbs/zh-CN.json',
 ];

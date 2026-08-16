@@ -1,0 +1,1030 @@
+[
+  {
+    "en": "Test API Key",
+    "zh": "测试 API Key"
+  },
+  {
+    "en": "Sign-in URL:",
+    "zh": "登录 URL："
+  },
+  {
+    "en": "API key auth",
+    "zh": "API Key 认证"
+  },
+  {
+    "en": "Not logged in",
+    "zh": "未登录"
+  },
+  {
+    "en": "not signed in",
+    "zh": "未登录"
+  },
+  {
+    "en": "not logged in",
+    "zh": "未登录"
+  },
+  {
+    "en": "Yes, use reset",
+    "zh": "是，使用重置"
+  },
+  {
+    "en": "Auth on install",
+    "zh": "安装时认证"
+  },
+  {
+    "en": "Does not expire",
+    "zh": "永不过期"
+  },
+  {
+    "en": "Open sign-in URL",
+    "zh": "打开登录 URL"
+  },
+  {
+    "en": "Finish App Setup",
+    "zh": "完成 App 设置"
+  },
+  {
+    "en": "Select provider?",
+    "zh": "选择提供方？"
+  },
+  {
+    "en": "Finish in Browser",
+    "zh": "在浏览器中完成"
+  },
+  {
+    "en": "Install on ChatGPT",
+    "zh": "在 ChatGPT 上安装"
+  },
+  {
+    "en": "Finish App Sign In",
+    "zh": "完成 App 登录"
+  },
+  {
+    "en": "I already signed in",
+    "zh": "我已登录"
+  },
+  {
+    "en": "Sign in with ChatGPT",
+    "zh": "使用 ChatGPT 登录"
+  },
+  {
+    "en": "Pay for what you use",
+    "zh": "按用量付费"
+  },
+  {
+    "en": "Monthly credit limit",
+    "zh": "每月额度上限"
+  },
+  {
+    "en": "Finish Authentication",
+    "zh": "完成认证"
+  },
+  {
+    "en": "Successfully logged in",
+    "zh": "登录成功"
+  },
+  {
+    "en": "See full release notes:",
+    "zh": "查看完整发布说明："
+  },
+  {
+    "en": "Skip until next version",
+    "zh": "跳过，直到下一版本"
+  },
+  {
+    "en": "Successfully logged out",
+    "zh": "已退出登录"
+  },
+  {
+    "en": "Sign in with Device Code",
+    "zh": "使用设备码登录"
+  },
+  {
+    "en": "Provide your own API key",
+    "zh": "提供你自己的 API Key"
+  },
+  {
+    "en": "ChatGPT login is disabled",
+    "zh": "ChatGPT 登录已禁用"
+  },
+  {
+    "en": "API key login is disabled.",
+    "zh": "API Key 登录已禁用。"
+  },
+  {
+    "en": "Paste or type your API key",
+    "zh": "粘贴或输入你的 API Key"
+  },
+  {
+    "en": "Logged in using access token",
+    "zh": "已使用 access token 登录"
+  },
+  {
+    "en": "Powered by your ChatGPT account",
+    "zh": "由你的 ChatGPT 账户驱动"
+  },
+  {
+    "en": "Finish signing in via your browser",
+    "zh": "在浏览器中完成登录"
+  },
+  {
+    "en": "Sign in with ChatGPT to use /usage.",
+    "zh": "登录 ChatGPT 以使用 /usage。"
+  },
+  {
+    "en": "Logged in using personal access token",
+    "zh": "已使用 personal access token 登录"
+  },
+  {
+    "en": "Logged in using Amazon Bedrock API key",
+    "zh": "已使用 Amazon Bedrock API Key 登录"
+  },
+  {
+    "en": "Use your own OpenAI API key for usage-based billing",
+    "zh": "使用你自己的 OpenAI API Key 按用量计费",
+    "pad": false
+  },
+  {
+    "en": "ChatGPT login is disabled. Use API key login instead.",
+    "zh": "ChatGPT 登录已禁用，请改用 API Key 登录。",
+    "pad": false
+  },
+  {
+    "en": "API key login is disabled. Use ChatGPT login instead.",
+    "zh": "API Key 登录已禁用，请改用 ChatGPT 登录。",
+    "pad": false
+  },
+  {
+    "en": "Complete authentication in the browser window that just opened.",
+    "zh": "在刚打开的浏览器窗口中完成认证。",
+    "pad": false
+  },
+  {
+    "en": "Continue only if you started this login in Codex. If a website or another person gave you this code, cancel.",
+    "zh": "仅当你是在 Codex 中发起此登录时才继续；如果代码来自网站或他人，请取消。",
+    "pad": false
+  },
+  {
+    "en": "Approve for me",
+    "zh": "Approve for me"
+  },
+  {
+    "en": "Ask for approval",
+    "zh": "Ask for approval"
+  },
+  {
+    "en": "Permission rule:",
+    "zh": "权限规则："
+  },
+  {
+    "en": "Cancel this request",
+    "zh": "取消此请求"
+  },
+  {
+    "en": "Yes, just this once",
+    "zh": "是，仅此一次"
+  },
+  {
+    "en": "Enable full access?",
+    "zh": "启用完整访问？"
+  },
+  {
+    "en": "Allow this request?",
+    "zh": "允许此请求？"
+  },
+  {
+    "en": "Network access JSON:",
+    "zh": "网络访问 JSON："
+  },
+  {
+    "en": "Planned action JSON:",
+    "zh": "计划操作 JSON："
+  },
+  {
+    "en": "Yes, continue anyway",
+    "zh": "是，仍然继续"
+  },
+  {
+    "en": "Cancel this tool call",
+    "zh": "取消此工具调用"
+  },
+  {
+    "en": "No, stay in Plan mode",
+    "zh": "否，保持 Plan mode"
+  },
+  {
+    "en": "Allow for this session",
+    "zh": "本次会话允许"
+  },
+  {
+    "en": "Cancel this tool call.",
+    "zh": "取消此工具调用。"
+  },
+  {
+    "en": "Approve app tool call?",
+    "zh": "批准 App 工具调用？"
+  },
+  {
+    "en": "Network access request.",
+    "zh": "网络访问请求。"
+  },
+  {
+    "en": "Network approval context:",
+    "zh": "网络审批上下文："
+  },
+  {
+    "en": "Run the tool and continue.",
+    "zh": "运行工具并继续。"
+  },
+  {
+    "en": "Reviewing approval request",
+    "zh": "正在审核审批请求"
+  },
+  {
+    "en": "Workspace (Approve for me)",
+    "zh": "工作区（Approve for me）"
+  },
+  {
+    "en": "Filesystem access request.",
+    "zh": "文件系统访问请求。"
+  },
+  {
+    "en": "Approve the primary option.",
+    "zh": "批准首选选项。"
+  },
+  {
+    "en": "Read Only (Ask for approval)",
+    "zh": "只读（Ask for approval）"
+  },
+  {
+    "en": "Workspace (Ask for approval)",
+    "zh": "工作区（Ask for approval）"
+  },
+  {
+    "en": "Follow the Workspace Policy.",
+    "zh": "遵循工作区策略。"
+  },
+  {
+    "en": "Active command approval mode",
+    "zh": "命令审批模式已启用"
+  },
+  {
+    "en": "Allow and don't ask me again",
+    "zh": "允许且不再询问"
+  },
+  {
+    "en": "Read Only with network access",
+    "zh": "只读且可访问网络"
+  },
+  {
+    "en": "Configured permission profile.",
+    "zh": "已配置权限配置文件。"
+  },
+  {
+    "en": "Approved command prefix saved:",
+    "zh": "已保存批准的命令前缀："
+  },
+  {
+    "en": "No, continue without running it",
+    "zh": "否，不运行并继续"
+  },
+  {
+    "en": "Yes, provide the requested info",
+    "zh": "是，提供所需信息"
+  },
+  {
+    "en": "No, continue without permissions",
+    "zh": "否，不授予权限并继续"
+  },
+  {
+    "en": "Allow this request and continue.",
+    "zh": "允许此请求并继续。"
+  },
+  {
+    "en": "Yes, clear context and implement",
+    "zh": "是，清空上下文并执行"
+  },
+  {
+    "en": "You granted additional permissions",
+    "zh": "你已授予额外权限"
+  },
+  {
+    "en": "Decline this request and continue.",
+    "zh": "拒绝此请求并继续。"
+  },
+  {
+    "en": "Select a denied action to approve.",
+    "zh": "选择要批准的已拒绝操作。"
+  },
+  {
+    "en": "Apply full access for this session",
+    "zh": "为本次会话授予完整访问权限"
+  },
+  {
+    "en": "Review the confirmation prompt again.",
+    "zh": "再次查看确认提示。"
+  },
+  {
+    "en": "Permissions updated to Approve for me",
+    "zh": "权限已更新为 Approve for me"
+  },
+  {
+    "en": "No, and block this host in the future",
+    "zh": "否，并在以后阻止此主机"
+  },
+  {
+    "en": "Network access was blocked by policy.",
+    "zh": "网络访问被策略阻止。"
+  },
+  {
+    "en": "Filesystem or network access request.",
+    "zh": "文件系统或网络访问请求。"
+  },
+  {
+    "en": "Yes, and allow this host in the future",
+    "zh": "是，并在以后允许此主机"
+  },
+  {
+    "en": "Permissions updated to Ask for approval",
+    "zh": "权限已更新为 Ask for approval"
+  },
+  {
+    "en": "Approve for the session when available.",
+    "zh": "可用时批准本次会话。"
+  },
+  {
+    "en": "You did not grant additional permissions",
+    "zh": "你未授予额外权限"
+  },
+  {
+    "en": "Yes, and don't ask again for these files",
+    "zh": "是，且不再询问这些文件"
+  },
+  {
+    "en": "Auto-review did not include a rationale.",
+    "zh": "自动审查未给出理由。"
+  },
+  {
+    "en": "Decline and provide corrective guidance.",
+    "zh": "拒绝并提供纠正指导。"
+  },
+  {
+    "en": "No, and tell Codex what to do differently",
+    "zh": "否，并告诉 Codex 如何改进"
+  },
+  {
+    "en": "This action is disabled by configuration.",
+    "zh": "此操作已被配置禁用。"
+  },
+  {
+    "en": "Active permission profile or sandbox mode",
+    "zh": "当前权限配置文件或沙盒模式"
+  },
+  {
+    "en": "Reason: Automatic approval review failed:",
+    "zh": "原因：自动审批审查失败："
+  },
+  {
+    "en": "Would you like to grant these permissions?",
+    "zh": "是否授予这些权限？"
+  },
+  {
+    "en": "Yes, grant these permissions for this turn",
+    "zh": "是，为本次轮次授予这些权限"
+  },
+  {
+    "en": "Inspect pending changes before proceeding.",
+    "zh": "继续前请检查待处理的更改。"
+  },
+  {
+    "en": "Would you like to make the following edits?",
+    "zh": "是否进行以下编辑？"
+  },
+  {
+    "en": "Respond to the tool suggestion to continue.",
+    "zh": "回应工具建议以继续。"
+  },
+  {
+    "en": "No, go back",
+    "zh": "否，返回"
+  },
+  {
+    "en": "How was this?",
+    "zh": "这次如何？"
+  },
+  {
+    "en": "Try new model",
+    "zh": "尝试新模型"
+  },
+  {
+    "en": "Create a plan?",
+    "zh": "创建计划？"
+  },
+  {
+    "en": "To get started",
+    "zh": "开始使用"
+  },
+  {
+    "en": "Closed an agent",
+    "zh": "已关闭 Agent"
+  },
+  {
+    "en": "No sessions yet",
+    "zh": "暂无会话"
+  },
+  {
+    "en": "Wait timed out.",
+    "zh": "等待超时。"
+  },
+  {
+    "en": "Spawned an agent",
+    "zh": "已生成一个 Agent"
+  },
+  {
+    "en": "Resumed an agent",
+    "zh": "已恢复一个 Agent"
+  },
+  {
+    "en": "Server: payments",
+    "zh": "服务器：payments"
+  },
+  {
+    "en": "No goal to clear",
+    "zh": "没有可清除的目标"
+  },
+  {
+    "en": "Type your answer",
+    "zh": "输入你的答案"
+  },
+  {
+    "en": "Choose an action",
+    "zh": "选择一个操作"
+  },
+  {
+    "en": "Enable memories?",
+    "zh": "启用记忆？"
+  },
+  {
+    "en": "Session runtime:",
+    "zh": "会话运行时长："
+  },
+  {
+    "en": "Import finished:",
+    "zh": "导入完成："
+  },
+  {
+    "en": "Results by type:",
+    "zh": "按类型的结果："
+  },
+  {
+    "en": "Review selection",
+    "zh": "审核所选内容"
+  },
+  {
+    "en": "Current project:",
+    "zh": "当前项目："
+  },
+  {
+    "en": "Generated Image:",
+    "zh": "生成的图像："
+  },
+  {
+    "en": "Searched the web",
+    "zh": "已搜索网络"
+  },
+  {
+    "en": "Pick another key",
+    "zh": "选择其他按键"
+  },
+  {
+    "en": "Finished waiting",
+    "zh": "等待完成"
+  },
+  {
+    "en": "Compose new task",
+    "zh": "编写新任务"
+  },
+  {
+    "en": "Agent shut down.",
+    "zh": "Agent 已关闭。"
+  },
+  {
+    "en": "Script completed",
+    "zh": "脚本已完成"
+  },
+  {
+    "en": "Sleep completed.",
+    "zh": "休眠已完成。"
+  },
+  {
+    "en": "Update available!",
+    "zh": "有可用更新！"
+  },
+  {
+    "en": "Manage on ChatGPT",
+    "zh": "在 ChatGPT 上管理"
+  },
+  {
+    "en": "Compacted context",
+    "zh": "上下文已压缩"
+  },
+  {
+    "en": "Generate memories",
+    "zh": "生成记忆"
+  },
+  {
+    "en": "None of the above",
+    "zh": "以上都不是"
+  },
+  {
+    "en": "No plugin skills.",
+    "zh": "没有插件技能。"
+  },
+  {
+    "en": "I've installed it",
+    "zh": "我已安装"
+  },
+  {
+    "en": "Context compacted",
+    "zh": "上下文已压缩"
+  },
+  {
+    "en": "No, don't archive",
+    "zh": "否，不归档"
+  },
+  {
+    "en": "usage limit reset",
+    "zh": "用量限制重置"
+  },
+  {
+    "en": "Enable subagents?",
+    "zh": "启用子 Agent？"
+  },
+  {
+    "en": "Vim mode enabled.",
+    "zh": "Vim 模式已启用。"
+  },
+  {
+    "en": "Searching the web",
+    "zh": "正在搜索网络"
+  },
+  {
+    "en": "Shortcut Conflict",
+    "zh": "快捷键冲突"
+  },
+  {
+    "en": "Before you start:",
+    "zh": "开始之前："
+  },
+  {
+    "en": "Delete cancelled.",
+    "zh": "已取消删除。"
+  },
+  {
+    "en": "Background Server",
+    "zh": "后台服务器"
+  },
+  {
+    "en": "Agent loop exited",
+    "zh": "Agent 循环已退出"
+  },
+  {
+    "en": "Script terminated",
+    "zh": "脚本已终止"
+  },
+  {
+    "en": "Multi-agent tools",
+    "zh": "多 Agent 工具"
+  },
+  {
+    "en": "Usage limit resets",
+    "zh": "用量限制重置"
+  },
+  {
+    "en": "Saved user message",
+    "zh": "已保存用户消息"
+  },
+  {
+    "en": "Thread forked from",
+    "zh": "会话派生自"
+  },
+  {
+    "en": "Reset all memories",
+    "zh": "重置所有记忆"
+  },
+  {
+    "en": "Current model name",
+    "zh": "当前模型名称"
+  },
+  {
+    "en": "IDE context is on.",
+    "zh": "IDE 上下文已开启。"
+  },
+  {
+    "en": "Memory maintenance",
+    "zh": "记忆维护"
+  },
+  {
+    "en": "Collaboration mode",
+    "zh": "协作模式"
+  },
+  {
+    "en": "Sub-agents running",
+    "zh": "子 Agent 运行中"
+  },
+  {
+    "en": "Generated an image",
+    "zh": "已生成图像"
+  },
+  {
+    "en": "Exited review mode",
+    "zh": "已退出审查模式"
+  },
+  {
+    "en": "Workspace headline",
+    "zh": "工作区标题"
+  },
+  {
+    "en": "Apps are disabled.",
+    "zh": "App 已禁用。"
+  },
+  {
+    "en": "No apps available.",
+    "zh": "没有可用 App。"
+  },
+  {
+    "en": "Advanced Reasoning",
+    "zh": "高级推理"
+  },
+  {
+    "en": "Keep current model",
+    "zh": "保留当前模型"
+  },
+  {
+    "en": "Select Personality",
+    "zh": "选择性格"
+  },
+  {
+    "en": "Session renamed to",
+    "zh": "会话已重命名为"
+  },
+  {
+    "en": "Vim mode disabled.",
+    "zh": "Vim 模式已禁用。"
+  },
+  {
+    "en": "Use existing model",
+    "zh": "使用现有模型"
+  },
+  {
+    "en": "Waiting for agents",
+    "zh": "等待 Agent"
+  },
+  {
+    "en": "Ollama (Responses)",
+    "zh": "Ollama(Responses)"
+  },
+  {
+    "en": "Technical details:",
+    "zh": "技术详情："
+  },
+  {
+    "en": "Keyboard interrupt",
+    "zh": "键盘中断"
+  },
+  {
+    "en": "IDE context is off.",
+    "zh": "IDE 上下文已关闭。"
+  },
+  {
+    "en": "Waited for an agent",
+    "zh": "已等待一个 Agent"
+  },
+  {
+    "en": "Entered review mode",
+    "zh": "已进入审查模式"
+  },
+  {
+    "en": "Need access to .git",
+    "zh": "需要访问 .git"
+  },
+  {
+    "en": "Move the cursor up.",
+    "zh": "光标上移。"
+  },
+  {
+    "en": "Operator motion up.",
+    "zh": "操作符上移。"
+  },
+  {
+    "en": "No common shortcuts",
+    "zh": "没有常用快捷键"
+  },
+  {
+    "en": "Preview unavailable",
+    "zh": "预览不可用"
+  },
+  {
+    "en": "Loading transcript…",
+    "zh": "加载 transcript…"
+  },
+  {
+    "en": "Select Syntax Theme",
+    "zh": "选择语法主题"
+  },
+  {
+    "en": "No changes detected.",
+    "zh": "未检测到更改。"
+  },
+  {
+    "en": "Replace current goal",
+    "zh": "替换当前目标"
+  },
+  {
+    "en": "Tell us more (other)",
+    "zh": "其他反馈"
+  },
+  {
+    "en": "Cloud-managed config",
+    "zh": "云端管理配置"
+  },
+  {
+    "en": "Installed · Disabled",
+    "zh": "已安装 · 已禁用"
+  },
+  {
+    "en": "Implement this plan?",
+    "zh": "执行此计划？"
+  },
+  {
+    "en": "No installed plugins",
+    "zh": "没有已安装插件"
+  },
+  {
+    "en": "Select a base branch",
+    "zh": "选择基线分支"
+  },
+  {
+    "en": "No skills available.",
+    "zh": "没有可用技能。"
+  },
+  {
+    "en": "Delete this session?",
+    "zh": "删除此会话？"
+  },
+  {
+    "en": "Yes, delete and exit",
+    "zh": "是，删除并退出"
+  },
+  {
+    "en": "Recent chat sessions",
+    "zh": "最近聊天会话"
+  },
+  {
+    "en": "Background terminals",
+    "zh": "后台终端"
+  },
+  {
+    "en": "Custom root override",
+    "zh": "自定义根目录覆盖"
+  },
+  {
+    "en": "hide the status line",
+    "zh": "隐藏状态栏"
+  },
+  {
+    "en": "Install MCP servers?",
+    "zh": "安装 MCP 服务器？"
+  },
+  {
+    "en": "Priority processing.",
+    "zh": "优先处理。"
+  },
+  {
+    "en": "Enable/Disable Skills",
+    "zh": "启用/禁用技能"
+  },
+  {
+    "en": "Reset local memories.",
+    "zh": "重置本地记忆。"
+  },
+  {
+    "en": "Keep the current goal",
+    "zh": "保留当前目标"
+  },
+  {
+    "en": "Experimental features",
+    "zh": "实验性功能"
+  },
+  {
+    "en": "Type to search skills",
+    "zh": "输入以搜索技能"
+  },
+  {
+    "en": "Configure Status Line",
+    "zh": "配置状态栏"
+  },
+  {
+    "en": "Shared with me (link)",
+    "zh": "通过链接共享给我"
+  },
+  {
+    "en": "No installed plugins.",
+    "zh": "没有已安装插件。"
+  },
+  {
+    "en": "Plugins are disabled.",
+    "zh": "插件已禁用。"
+  },
+  {
+    "en": "Archive this session?",
+    "zh": "归档此会话？"
+  },
+  {
+    "en": "Yes, archive and exit",
+    "zh": "是，归档并退出"
+  },
+  {
+    "en": "No, keep this session",
+    "zh": "否，保留此会话"
+  },
+  {
+    "en": "Last 30 days of chats",
+    "zh": "最近 30 天的对话"
+  },
+  {
+    "en": "Choose what to import",
+    "zh": "选择要导入的内容"
+  },
+  {
+    "en": "Loading MCP inventory",
+    "zh": "正在加载 MCP 清单"
+  },
+  {
+    "en": "Marketplace add failed",
+    "zh": "添加 Marketplace 失败"
+  },
+  {
+    "en": "Type to search plugins",
+    "zh": "输入以搜索插件"
+  },
+  {
+    "en": "No plugin MCP servers.",
+    "zh": "没有插件 MCP 服务器。"
+  },
+  {
+    "en": "Expiration unavailable",
+    "zh": "过期时间不可用"
+  },
+  {
+    "en": "Select a review preset",
+    "zh": "选择审查预设"
+  },
+  {
+    "en": "Apply reasoning change",
+    "zh": "应用推理更改"
+  },
+  {
+    "en": "No plugins available in this marketplace",
+    "zh": "此 Marketplace 中没有可用插件"
+  },
+  {
+    "en": "No plugins available in this marketplace.",
+    "zh": "此 Marketplace 中没有可用插件。"
+  },
+  {
+    "en": "Browse plugins from available marketplaces.",
+    "zh": "从可用 Marketplace 浏览插件。"
+  },
+  {
+    "en": "Enable the plugins feature to use /plugins.",
+    "zh": "启用插件功能以使用 /plugins。"
+  },
+  {
+    "en": "This updates when the marketplace list is ready.",
+    "zh": "Marketplace 列表就绪后会更新。",
+    "pad": false
+  },
+  {
+    "en": "Add a marketplace from a Git repo or local root.",
+    "zh": "从 Git 仓库或本地根目录添加 Marketplace。",
+    "pad": false
+  },
+  {
+    "en": "You can now continue managing plugins from /plugins.",
+    "zh": "现在你可以继续通过 /plugins 管理插件。",
+    "pad": false
+  },
+  {
+    "en": "This updates when marketplace installation completes.",
+    "zh": "Marketplace 安装完成后会更新。",
+    "pad": false
+  },
+  {
+    "en": "This plugin is not installable from this marketplace.",
+    "zh": "此插件无法从此 Marketplace 安装。",
+    "pad": false
+  },
+  {
+    "en": "No plugins are available in the discovered marketplaces.",
+    "zh": "已发现的 Marketplace 中没有可用插件。",
+    "pad": false
+  },
+  {
+    "en": "Enter a source to make its plugins available in this menu.",
+    "zh": "输入来源以使其插件在此菜单中可用。",
+    "pad": false
+  },
+  {
+    "en": "A plugin is a local bundle of skills, MCP servers, and apps.",
+    "zh": "插件是技能、MCP 服务器和 App 的本地集合。",
+    "pad": false
+  },
+  {
+    "en": "Newly installed apps can take a few minutes to appear in /apps.",
+    "zh": "新安装的 App 可能需要几分钟才会出现在 /apps 中。",
+    "pad": false
+  },
+  {
+    "en": "The plugin may not be usable until required apps are installed.",
+    "zh": "安装所需 App 后此插件才可能可用。",
+    "pad": false
+  },
+  {
+    "en": "Here is a list of plugins that are available but not installed.",
+    "zh": "以下插件可用但未安装。",
+    "pad": false
+  },
+  {
+    "en": "Select the plugins you want to use and press Enter to install or view details.",
+    "zh": "选择要使用的插件并按 Enter 安装或查看详情。",
+    "pad": false
+  },
+  {
+    "en": "Fix the reported config error, then rerun codex doctor.",
+    "zh": "修复报告的配置错误，然后重新运行 codex doctor。",
+    "pad": false
+  },
+  {
+    "en": "Run codex doctor without --summary for detailed diagnostics.",
+    "zh": "运行 codex doctor（不带 --summary）查看详细诊断。",
+    "pad": false
+  },
+  {
+    "en": "Set the missing MCP env vars or disable the affected server.",
+    "zh": "设置缺失的 MCP 环境变量，或禁用受影响的服务器。",
+    "pad": false
+  },
+  {
+    "en": "Run `codex doctor` to check your setup and get next-step guidance.",
+    "zh": "运行 `codex doctor` 检查你的设置并获取下一步指导。",
+    "pad": false
+  },
+  {
+    "en": "To get started, describe a task or try one of these commands:",
+    "zh": "开始使用：描述任务或尝试以下命令之一：",
+    "pad": false
+  },
+  {
+    "en": "Toggle experimental features. Changes are saved to config.toml.",
+    "zh": "切换实验性功能。更改会保存到 config.toml。",
+    "pad": false
+  },
+  {
+    "en": "Remaining usage on the daily usage limit (omitted when unavailable)",
+    "zh": "每日用量限制的剩余用量（不可用时省略）"
+  },
+  {
+    "en": "Remaining usage on the primary usage limit (omitted when unavailable)",
+    "zh": "主用量限制的剩余用量（不可用时省略）"
+  },
+  {
+    "en": "Remaining usage on the monthly usage limit (omitted when unavailable)",
+    "zh": "每月用量限制的剩余用量（不可用时省略）"
+  },
+  {
+    "en": "Usage limit reached. You've reached your usage limit. Increase your limits to continue using codex.",
+    "zh": "已达到用量限制。提高限制以继续使用 codex。",
+    "pad": false
+  },
+  {
+    "en": "Quit any other copies of Codex that may still be running, then try again.",
+    "zh": "退出其他可能仍在运行的 Codex 副本，然后重试。",
+    "pad": false
+  },
+  {
+    "en": "Cannot open external editor: set $VISUAL or $EDITOR before starting Codex.",
+    "zh": "无法打开外部编辑器：启动 Codex 前请设置 $VISUAL 或 $EDITOR。",
+    "pad": false
+  },
+  {
+    "en": "Choose how Codex uses and creates memories. Changes are saved to config.toml",
+    "zh": "选择 Codex 使用和创建记忆的方式。更改会保存到 config.toml",
+    "pad": false
+  },
+  {
+    "en": "Import from other apps is unavailable in remote sessions. Start Codex locally and run /import.",
+    "zh": "远程会话中无法从其他 App 导入。请在本地启动 Codex 并运行 /import。",
+    "pad": false
+  }
+]
