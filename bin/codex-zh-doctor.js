@@ -62,15 +62,21 @@ healthy = check('node-pty 依赖', () => {
 
 healthy = check('翻译数据', () => {
   const files = ['ui-translations.json', 'ui-translations-extra.json', 'ui-translations-slash.json', 'ui-translations-words.json', 'ui-patterns.json'];
-  let total = 0;
+  const all = [];
   for (const f of files) {
     const p = path.join(ROOT, 'data', f);
     if (!fs.existsSync(p)) throw new Error(`缺少 data/${f}`);
     const arr = JSON.parse(fs.readFileSync(p, 'utf8'));
     if (!Array.isArray(arr)) throw new Error(`data/${f} 不是数组`);
-    total += arr.length;
+    all.push(...arr);
   }
-  console.log(`    词条：${total}`);
+  const verbsPath = path.join(ROOT, 'verbs', 'zh-CN.json');
+  if (fs.existsSync(verbsPath)) {
+    const verbs = JSON.parse(fs.readFileSync(verbsPath, 'utf8'));
+    if (Array.isArray(verbs)) all.push(...verbs);
+  }
+  const unique = new Set(all.filter((e) => e && typeof e.en === 'string').map((e) => e.en)).size;
+  console.log(`    去重词条：${unique}`);
   return true;
 }) && healthy;
 

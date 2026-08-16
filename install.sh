@@ -63,6 +63,8 @@ fi
 # ---- 安装依赖 ---------------------------------------------------------------
 info "安装 node-pty 依赖"
 ( cd "$CODEX_ZH_HOME" && npm install --omit=dev --no-audit --no-fund >/dev/null )
+# 部分 npm/系统组合下 prebuild 文件会丢失可执行位，显式补上
+chmod +x "$CODEX_ZH_HOME"/node_modules/node-pty/prebuilds/*/spawn-helper 2>/dev/null || true
 
 chmod +x "$CODEX_ZH_HOME/bin/codex-zh.js" "$CODEX_ZH_HOME/bin/codex-zh-doctor.js" 2>/dev/null || true
 
