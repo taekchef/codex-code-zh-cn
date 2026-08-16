@@ -737,5 +737,11 @@
     "en": "authenticated",
     "zh": "已认证",
     "word": true
+  },
+  {
+    "en": "max",
+    "zh": "最强",
+    "word": true,
+    "pad": false
   }
 ]
