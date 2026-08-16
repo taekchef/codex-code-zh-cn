@@ -64,9 +64,9 @@ test('status reports missing/not-applied', () => {
 
 test('codexConfigPath respects CODEX_HOME', () => {
   const old = process.env.CODEX_HOME;
-  process.env.CODEX_HOME = '/tmp/codex-home-test';
+  process.env.CODEX_HOME = path.join(os.tmpdir(), 'codex-home-test');
   try {
-    assert.equal(codexConfigPath(), '/tmp/codex-home-test/config.toml');
+    assert.equal(codexConfigPath(), path.join(process.env.CODEX_HOME, 'config.toml'));
   } finally {
     if (old === undefined) delete process.env.CODEX_HOME;
     else process.env.CODEX_HOME = old;

@@ -22,7 +22,7 @@
     "README.md"
   ],
   "scripts": {
-    "test": "node --test tests/*.test.js",
+    "test": "node --test",
     "lint": "node scripts/validate-data.js"
   },
   "engines": {
