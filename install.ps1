@@ -21,6 +21,7 @@ if (Test-Path (Join-Path $InstallDir '.git')) {
     git -C $InstallDir pull --ff-only | Out-Null
 } elseif (Get-Command git -ErrorAction SilentlyContinue) {
     Info "克隆仓库到：$InstallDir"
+    if (Test-Path $InstallDir) { Remove-Item $InstallDir -Recurse -Force }
     git clone --depth 1 $RepoUrl $InstallDir | Out-Null
 } else {
     Info '下载 release tarball'

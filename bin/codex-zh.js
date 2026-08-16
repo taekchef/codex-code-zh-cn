@@ -103,12 +103,28 @@ async function main() {
     return;
   }
 
-  const codexBin = detect.resolveCodexBin(opts.codexBin);
+  let codexBin = detect.resolveCodexBin(opts.codexBin);
   if (!codexBin) {
     fail(
       '未找到 Codex CLI。请先安装：npm install -g @openai/codex@latest，' +
         '或用 --codex-bin 指定可执行文件路径。'
     );
+  }
+
+  // Windows 上 npm 的 codex 入口是 .cmd shim，ConPTY 直接执行会失败；
+  // 优先解析到原生 codex.exe，并补上 launcher 注入的包根环境变量。
+  const managedRootEnv = {};
+  if (process.platform === 'win32') {
+    const native = detect.resolveNativeBinary(codexBin);
+    if (native) {
+      const platformPkgRoot = path.resolve(native, '..', '..', '..');
+      const atOpenai = path.dirname(platformPkgRoot);
+      const codexPkgRoot = path.join(atOpenai, 'codex');
+      if (fs.existsSync(codexPkgRoot)) {
+        managedRootEnv.CODEX_MANAGED_PACKAGE_ROOT = codexPkgRoot;
+      }
+      codexBin = native;
+    }
   }
 
   if (process.env.CODEX_ZH_SKIP === '1' || !opts.translate) {
@@ -136,11 +152,13 @@ async function main() {
 
   const childEnv = {
     ...process.env,
+    ...managedRootEnv,
     TERM: term,
     CODEX_ZH_SKIP: '1',
     CODEX_ZH_WRAPPED: '1',
   };
 
+  process.stdout.on('error', () => {}); // swallow EPIPE when piped into head/less
   const entries = loadEntries();
   const translator = new StreamTranslator(entries, (chunk) => {
     process.stdout.write(chunk);
