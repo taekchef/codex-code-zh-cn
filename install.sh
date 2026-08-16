@@ -1,10 +1,11 @@
 #!/usr/bin/env bash
 # install.sh — 安装 codex-code-zh-cn（macOS / Linux）
 #
+# 只处理 Codex CLI；不安装、不修改桌面版。
+#
 # 用法：
 #   ./install.sh                 安装或更新（默认接管 codex 命令，直接输入 codex 即中文）
 #   ./install.sh --no-shadow     只装 codex-zh，不动 codex 命令
-#   ./install.sh --no-config     不写 ~/.codex/config.toml
 #   CODEX_ZH_HOME=/path ./install.sh   指定安装目录（默认 ~/.codex-code-zh-cn）
 #
 # 安装内容：
@@ -12,7 +13,6 @@
 #   2. npm install --omit=dev（node-pty）
 #   3. 在 ~/.local/bin 建立 codex-zh / codex-zh-doctor 软链
 #   4. 接管 codex 命令 → 中文版（可用 --no-shadow 跳过）
-#   5. 向 ~/.codex/config.toml 写入 [desktop] localeOverride = "zh-CN"
 set -euo pipefail
 
 info() { printf '\033[1;36m[codex-zh]\033[0m %s\n' "$*"; }
@@ -21,11 +21,9 @@ err()  { printf '\033[1;31m[codex-zh]\033[0m %s\n' "$*" >&2; }
 REPO="https://github.com/taekchef/codex-code-zh-cn.git"
 CODEX_ZH_HOME="${CODEX_ZH_HOME:-$HOME/.codex-code-zh-cn}"
 BIN_DIR="${CODEX_ZH_BIN_DIR:-$HOME/.local/bin}"
-WRITE_CONFIG=1
 SHADOW=1
 for arg in "$@"; do
   case "$arg" in
-    --no-config) WRITE_CONFIG=0 ;;
     --no-shadow) SHADOW=0 ;;
     *) err "未知参数：$arg" ;;
   esac
@@ -92,12 +90,6 @@ for name in codex-zh codex-zh-doctor; do
 done
 info "命令已安装：$BIN_DIR/codex-zh"
 
-# ---- 桌面语言覆盖 ------------------------------------------------------------
-if [[ "$WRITE_CONFIG" == "1" ]]; then
-  info "写入桌面语言设置（localeOverride=zh-CN）"
-  node "$CODEX_ZH_HOME/scripts/apply-config-overlay.js" apply
-fi
-
 # ---- 接管 codex 命令 ----------------------------------------------------------
 if [[ "$SHADOW" == "1" ]]; then
   info "接管 codex 命令：以后直接输入 codex 就是中文"
@@ -112,7 +104,7 @@ if [[ "$SHADOW" == "1" ]]; then
 fi
 
 # ---- 使用提示 ----------------------------------------------------------------
-info "完成！用法："
+info "完成！只做 CLI，不碰桌面版。用法："
 echo
 if [[ "$SHADOW" == "1" ]]; then
   echo "  codex                          # 直接输入 codex，就是中文 TUI"

@@ -1,6 +1,6 @@
 # codex-code-zh-cn
 
-OpenAI Codex CLI 简体中文本地化扩展（PTY 实时翻译包装器 + 桌面语言覆盖）。
+OpenAI Codex CLI 简体中文本地化扩展（PTY 实时翻译包装器；只做 CLI，不碰桌面版）。
 
 ## 架构与数据流
 

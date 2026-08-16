@@ -8,7 +8,6 @@
 const fs = require('fs');
 const path = require('path');
 const detect = require('../lib/detect');
-const { status: overlayStatus, codexConfigPath } = require('../lib/config-overlay');
 const { currentLanguage, settingsPath } = require('../lib/settings');
 
 const ROOT = path.join(__dirname, '..');
@@ -86,12 +85,6 @@ healthy = check('命令入口', () => {
   if (!fs.existsSync(bin)) throw new Error('缺少 bin/codex-zh.js');
   fs.accessSync(bin, fs.constants.R_OK);
   return true;
-}) && healthy;
-
-healthy = check('桌面语言覆盖 (~/.codex/config.toml)', () => {
-  const st = overlayStatus(codexConfigPath());
-  console.log(`    状态：${st}`);
-  return st === 'applied' || st === 'missing';
 }) && healthy;
 
 healthy = check('codex 命令接管（直接输入 codex 即中文）', () => {

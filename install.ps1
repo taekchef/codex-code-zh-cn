@@ -56,9 +56,7 @@ foreach ($name in @('codex-zh', 'codex-zh-doctor')) {
 }
 Info "命令已安装：$BinDir\codex-zh.cmd"
 
-# 桌面语言覆盖
-Info '写入桌面语言设置（localeOverride=zh-CN）'
-node (Join-Path $InstallDir 'scripts\apply-config-overlay.js') apply
+# 只处理 Codex CLI；不安装、不修改桌面版。
 
 # 接管 codex 命令
 if ($Shadow) {

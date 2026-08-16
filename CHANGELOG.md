@@ -1,3 +1,18 @@
+## v1.2.0（2026-08-16）
+
+### 变更（定位调整：只做 CLI）
+
+- **不再安装、不再修改 Codex Desktop**：安装脚本删除 localeOverride 写入步骤；桌面版自带官方中文，与本项目无关
+- 历史安装若已写入 `[desktop] localeOverride`，uninstall 会自动移除（legacy 清理）
+- doctor 移除桌面配置检查，只报告 CLI 状态
+- README/AGENTS/CLAUDE 文档同步为「只做 CLI，不碰桌面版」
+
+### 入口
+
+- 终端直接 `codex` = 中文（shadow 接管）
+- 会话内 `/chinese`、`/english`、`/language` 切换/帮助
+- `--codex-zh-lang zh|en`、`CODEX_ZH_LANG`
+
 ## v1.1.2（2026-08-16）
 
 ### 修复

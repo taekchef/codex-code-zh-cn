@@ -12,7 +12,7 @@
 - ✅ 安装后**直接输入 `codex` 就是中文**（接管 codex 命令，和 claude-code-zh-cn 的使用习惯一致）；`codex-zh` 作为显式包装器保留
 - ✅ 会话内随时切换：在 Codex 输入框输入 **`/chinese`**（或 `/zh`）回车 → 中文；**`/english`**（或 `/en`）→ 英文；选择会全局记住
 - ✅ 保留所有终端转义序列，每条译文**补齐到原文显示宽度**——边框、菜单、进度条不歪
-- ✅ 桌面版 Codex：Settings → General → Language 里可直接选 **中文（中国）**；安装脚本也会自动写入 `[desktop] localeOverride = "zh-CN"`
+- ✅ **只做 CLI，不碰桌面版**：不安装、不修改 Codex Desktop（桌面版自带官方中文，在 Settings 里选即可）
 - ✅ 不修改 Codex 二进制：真实入口原样备份，卸载/恢复一步完成
 - ✅ 支持最新版 Codex CLI（当前验证：**0.147.0**，2026-08-07 发布）
 
@@ -138,7 +138,6 @@ Codex CLI 输出 ──► ANSI 分词器 ──► 文本段 ──► 最长�
 | `data/ui-patterns.json` | 含 `${变量}` 的动态文本模式 |
 | `verbs/zh-CN.json` | 状态栏动词（唯一数据源：Thinking/Working/Checking…） |
 | `tips/zh-CN.json` | 中文使用提示（唯一数据源） |
-| `settings-overlay.toml` | 桌面语言覆盖（只含 `[desktop] localeOverride`） |
 
 维护规则：
 
@@ -153,22 +152,21 @@ Codex CLI 输出 ──► ANSI 分词器 ──► 文本段 ──► 最长�
 
 ## 配置
 
-安装脚本只会写入一个键：
+本项目**只做 CLI，不碰桌面版**。语言设置保存在：
 
-```toml
-[desktop]
-localeOverride = "zh-CN"
+```
+~/.codex-code-zh-cn/settings.json
 ```
 
-- 仅影响桌面版 Codex 语言，不触碰模型、认证、沙盒等任何其他配置。
-- 原文件在首次修改前备份为 `~/.codex/config.toml.codex-code-zh-cn.bak`。
-- 手动操作：`node scripts/apply-config-overlay.js apply|remove|status`。
+在 Codex 输入框输入 `/chinese`、`/english`（或 `/zh`、`/en`）回车即可切换并全局记住；
+也可用启动参数 `--codex-zh-lang zh|en` 或环境变量 `CODEX_ZH_LANG` 指定本次语言。
 
 包装器开关：
 
 | 开关 | 作用 |
 |------|------|
 | `--codex-bin <path>` | 指定 Codex 可执行文件 |
+| `--codex-zh-lang zh\|en` | 本次启动语言 |
 | `--codex-zh-no-translate` | 本次运行关闭翻译 |
 | `CODEX_ZH_DISABLE=1` | 环境变量方式关闭翻译 |
 | `--codex-zh-help` | 包装器帮助 |
@@ -211,7 +209,7 @@ node bin/codex-zh.js        # 本地运行
 
 ## 免责声明
 
-本项目是**非官方**中文补丁，只处理本机终端输出与桌面语言配置，与 OpenAI 无关；
+本项目是**非官方**中文补丁，只处理本机 Codex CLI 的终端输出，与 OpenAI 无关；
 不修改 Codex 二进制、不触碰认证凭据。使用风险自负。
 
 ## License
