@@ -251,8 +251,9 @@ async function main() {
   }
   process.stdin.on('data', (data) => {
     try {
-      toggleDetector(data);
-      p.write(data);
+      const text = Buffer.isBuffer(data) ? data.toString('utf8') : String(data);
+      toggleDetector(text);
+      p.write(text);
     } catch {}
   });
   process.stdin.resume();
