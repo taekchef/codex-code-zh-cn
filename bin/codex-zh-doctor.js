@@ -93,6 +93,13 @@ healthy = check('桌面语言覆盖 (~/.codex/config.toml)', () => {
   return st === 'applied' || st === 'missing';
 }) && healthy;
 
+healthy = check('codex 命令接管（直接输入 codex 即中文）', () => {
+  const found = detect.which('codex');
+  const shadowed = found && detect.isShadowShim(found);
+  console.log(`    状态：${shadowed ? 'installed' : 'not-installed'}（${found || '未找到'}）`);
+  return true; // 接管是可选能力，不强制判健康失败
+}) && healthy;
+
 healthy = check('PATH 中的 codex-zh', () => {
   const found = detect.which('codex-zh');
   if (!found) throw new Error('codex-zh 不在 PATH 中；请重新运行 install.sh / install.ps1');

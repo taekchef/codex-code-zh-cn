@@ -1,10 +1,12 @@
 # install.ps1 — 安装 codex-code-zh-cn（Windows）
-# 用法：powershell -ExecutionPolicy Bypass -File install.ps1
+# 用法：powershell -ExecutionPolicy Bypass -File install.ps1 [-NoShadow]
+param([switch]$NoShadow)
 $ErrorActionPreference = 'Stop'
 
 $RepoUrl = 'https://github.com/taekchef/codex-code-zh-cn.git'
 $InstallDir = if ($env:CODEX_ZH_HOME) { $env:CODEX_ZH_HOME } else { Join-Path $HOME '.codex-code-zh-cn' }
 $BinDir = if ($env:CODEX_ZH_BIN_DIR) { $env:CODEX_ZH_BIN_DIR } else { Join-Path $HOME '.local\bin' }
+$Shadow = -not $NoShadow
 
 function Info($msg) { Write-Host "[codex-zh] $msg" -ForegroundColor Cyan }
 
@@ -58,11 +60,19 @@ Info "命令已安装：$BinDir\codex-zh.cmd"
 Info '写入桌面语言设置（localeOverride=zh-CN）'
 node (Join-Path $InstallDir 'scripts\apply-config-overlay.js') apply
 
+# 接管 codex 命令
+if ($Shadow) {
+    Info '接管 codex 命令：以后直接输入 codex 就是中文'
+    node (Join-Path $InstallDir 'scripts\shadow-codex.js') apply
+}
+
 # 验证
 Info '验证安装'
 & (Join-Path $BinDir 'codex-zh.cmd') --version
+if ($Shadow) { codex --version }
 
-Info '完成！用法：codex-zh / codex-zh-doctor / codex-zh exec "提示"'
+Info '完成！用法：codex（已接管）/ codex-zh / codex-zh-doctor'
+Info 'Codex 升级后会被还原成英文，重跑本脚本即可再次接管。'
 if ($env:Path -notlike "*$BinDir*") {
     Info "注意：请把 $BinDir 加入用户 PATH"
 }

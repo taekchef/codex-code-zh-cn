@@ -15,6 +15,11 @@ info() { printf '\033[1;36m[codex-zh]\033[0m %s\n' "$*"; }
 
 info "卸载 codex-code-zh-cn"
 
+# 先恢复被接管的 codex 命令
+if [[ -f "$CODEX_ZH_HOME/scripts/shadow-codex.js" ]]; then
+  node "$CODEX_ZH_HOME/scripts/shadow-codex.js" remove || true
+fi
+
 for name in codex-zh codex-zh-doctor; do
   link="$BIN_DIR/$name"
   if [[ -L "$link" ]]; then

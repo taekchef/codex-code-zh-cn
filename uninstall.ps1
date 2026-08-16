@@ -6,6 +6,12 @@ $ErrorActionPreference = 'Stop'
 $InstallDir = if ($env:CODEX_ZH_HOME) { $env:CODEX_ZH_HOME } else { Join-Path $HOME '.codex-code-zh-cn' }
 $BinDir = if ($env:CODEX_ZH_BIN_DIR) { $env:CODEX_ZH_BIN_DIR } else { Join-Path $HOME '.local\bin' }
 
+# 先恢复被接管的 codex 命令
+$shadowScript = Join-Path $InstallDir 'scripts\shadow-codex.js'
+if (Test-Path $shadowScript) {
+    node $shadowScript remove
+}
+
 foreach ($name in @('codex-zh', 'codex-zh-doctor')) {
     $cmd = Join-Path $BinDir "$name.cmd"
     if (Test-Path $cmd) {

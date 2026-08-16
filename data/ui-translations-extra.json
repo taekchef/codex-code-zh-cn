@@ -148,14 +148,6 @@
     "zh": "快速且实惠的 agentic 编码模型。"
   },
   {
-    "en": "for everyday coding.",
-    "zh": "适合日常编码。"
-  },
-  {
-    "en": "coding model.",
-    "zh": "编码模型。"
-  },
-  {
     "en": "1. gpt-5.6-sol (current)  Latest frontier agentic coding model.",
     "zh": "1. gpt-5.6-sol（当前）  最新前沿 agentic 编码模型。",
     "pad": false
@@ -830,5 +822,41 @@
     "en": "No,",
     "zh": "否，",
     "pad": false
+  },
+  {
+    "en": "Frontier model for complex coding, research, and real-world work.",
+    "zh": "适用于复杂编码、研究与现实工作的前沿模型。"
+  },
+  {
+    "en": "Strong model for everyday coding.",
+    "zh": "适合日常编码的强劲模型。"
+  },
+  {
+    "en": "Ultra-fast model for everyday coding.",
+    "zh": "适合日常编码的超快模型。"
+  },
+  {
+    "en": "Fast responses with lighter reasoning",
+    "zh": "响应更快，推理更轻量"
+  },
+  {
+    "en": "Balances speed and reasoning depth for everyday tasks",
+    "zh": "平衡速度与推理深度，适合日常任务"
+  },
+  {
+    "en": "Greater reasoning depth for complex problems",
+    "zh": "针对复杂问题提供更深推理"
+  },
+  {
+    "en": "Extra high reasoning depth for complex problems",
+    "zh": "针对复杂问题提供超高推理深度"
+  },
+  {
+    "en": "Maximum reasoning depth for the hardest problems",
+    "zh": "针对最难问题提供最大推理深度"
+  },
+  {
+    "en": "Maximum reasoning with automatic task delegation",
+    "zh": "最大推理强度并自动委派任务"
   }
 ]

@@ -4,76 +4,6 @@
     "zh": "当前目录："
   },
   {
-    "en": "directory",
-    "zh": "目录",
-    "word": true
-  },
-  {
-    "en": "contents",
-    "zh": "内容",
-    "word": true
-  },
-  {
-    "en": "untrusted",
-    "zh": "不受信任",
-    "word": true
-  },
-  {
-    "en": "prompt",
-    "zh": "提示词",
-    "word": true
-  },
-  {
-    "en": "injection",
-    "zh": "注入",
-    "word": true
-  },
-  {
-    "en": "higher",
-    "zh": "更高",
-    "word": true
-  },
-  {
-    "en": "risk",
-    "zh": "风险",
-    "word": true
-  },
-  {
-    "en": "allows",
-    "zh": "允许",
-    "word": true
-  },
-  {
-    "en": "project-local",
-    "zh": "项目本地",
-    "word": true
-  },
-  {
-    "en": "config,",
-    "zh": "配置，",
-    "word": true
-  },
-  {
-    "en": "hooks,",
-    "zh": "Hook，",
-    "word": true
-  },
-  {
-    "en": "policies",
-    "zh": "策略",
-    "word": true
-  },
-  {
-    "en": "load.",
-    "zh": "加载",
-    "word": true
-  },
-  {
-    "en": "comes",
-    "zh": "带来",
-    "word": true
-  },
-  {
     "en": "typing",
     "zh": "输入中",
     "word": true
@@ -486,11 +416,6 @@
   {
     "en": "updated",
     "zh": "已更新",
-    "word": true
-  },
-  {
-    "en": "available",
-    "zh": "可用",
     "word": true
   },
   {

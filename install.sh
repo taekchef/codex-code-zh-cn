@@ -2,25 +2,34 @@
 # install.sh — 安装 codex-code-zh-cn（macOS / Linux）
 #
 # 用法：
-#   ./install.sh                 安装或更新
+#   ./install.sh                 安装或更新（默认接管 codex 命令，直接输入 codex 即中文）
+#   ./install.sh --no-shadow     只装 codex-zh，不动 codex 命令
+#   ./install.sh --no-config     不写 ~/.codex/config.toml
 #   CODEX_ZH_HOME=/path ./install.sh   指定安装目录（默认 ~/.codex-code-zh-cn）
-#   ./install.sh --no-config     只装包装器，不写 ~/.codex/config.toml
 #
 # 安装内容：
 #   1. 克隆/更新仓库到 $CODEX_ZH_HOME
 #   2. npm install --omit=dev（node-pty）
 #   3. 在 ~/.local/bin 建立 codex-zh / codex-zh-doctor 软链
-#   4. 向 ~/.codex/config.toml 写入 [desktop] localeOverride = "zh-CN"
+#   4. 接管 codex 命令 → 中文版（可用 --no-shadow 跳过）
+#   5. 向 ~/.codex/config.toml 写入 [desktop] localeOverride = "zh-CN"
 set -euo pipefail
+
+info() { printf '\033[1;36m[codex-zh]\033[0m %s\n' "$*"; }
+err()  { printf '\033[1;31m[codex-zh]\033[0m %s\n' "$*" >&2; }
 
 REPO="https://github.com/taekchef/codex-code-zh-cn.git"
 CODEX_ZH_HOME="${CODEX_ZH_HOME:-$HOME/.codex-code-zh-cn}"
 BIN_DIR="${CODEX_ZH_BIN_DIR:-$HOME/.local/bin}"
 WRITE_CONFIG=1
-if [[ "${1:-}" == "--no-config" ]]; then WRITE_CONFIG=0; fi
-
-info() { printf '\033[1;36m[codex-zh]\033[0m %s\n' "$*"; }
-err()  { printf '\033[1;31m[codex-zh]\033[0m %s\n' "$*" >&2; }
+SHADOW=1
+for arg in "$@"; do
+  case "$arg" in
+    --no-config) WRITE_CONFIG=0 ;;
+    --no-shadow) SHADOW=0 ;;
+    *) err "未知参数：$arg" ;;
+  esac
+done
 
 info "Codex 简体中文本地化 安装程序"
 
@@ -89,18 +98,33 @@ if [[ "$WRITE_CONFIG" == "1" ]]; then
   node "$CODEX_ZH_HOME/scripts/apply-config-overlay.js" apply
 fi
 
+# ---- 接管 codex 命令 ----------------------------------------------------------
+if [[ "$SHADOW" == "1" ]]; then
+  info "接管 codex 命令：以后直接输入 codex 就是中文"
+  node "$CODEX_ZH_HOME/scripts/shadow-codex.js" apply
+fi
+
 # ---- 验证 -------------------------------------------------------------------
 info "验证安装"
 "$BIN_DIR/codex-zh" --version
+if [[ "$SHADOW" == "1" ]]; then
+  codex --version
+fi
 
 # ---- 使用提示 ----------------------------------------------------------------
 info "完成！用法："
 echo
-echo "  codex-zh                       # 中文 TUI"
+if [[ "$SHADOW" == "1" ]]; then
+  echo "  codex                          # 直接输入 codex，就是中文 TUI"
+fi
+echo "  codex-zh                       # 显式中文包装器"
 echo "  codex-zh exec \"你的提示\"       # 非交互中文输出"
 echo "  codex-zh --codex-zh-no-translate ...   # 临时关闭翻译"
 echo "  codex-zh-doctor                # 健康检查"
 echo
+if [[ "$SHADOW" == "1" ]]; then
+  info "Codex 升级后（npm i -g @openai/codex@latest）会被还原成英文，重跑本脚本即可再次接管。"
+fi
 if ! echo "$PATH" | tr ':' '\n' | grep -qxF "$BIN_DIR"; then
   info "注意：$BIN_DIR 不在 PATH 中，请加入 shell 配置，例如："
   echo "  export PATH=\"$BIN_DIR:\$PATH\""
