@@ -9,6 +9,7 @@ const fs = require('fs');
 const path = require('path');
 const detect = require('../lib/detect');
 const { status: overlayStatus, codexConfigPath } = require('../lib/config-overlay');
+const { currentLanguage, settingsPath } = require('../lib/settings');
 
 const ROOT = path.join(__dirname, '..');
 
@@ -98,6 +99,13 @@ healthy = check('codex 命令接管（直接输入 codex 即中文）', () => {
   const shadowed = found && detect.isShadowShim(found);
   console.log(`    状态：${shadowed ? 'installed' : 'not-installed'}（${found || '未找到'}）`);
   return true; // 接管是可选能力，不强制判健康失败
+}) && healthy;
+
+healthy = check('包装器语言设置', () => {
+  const lang = currentLanguage();
+  console.log(`    语言：${lang}（${settingsPath()}）`);
+  console.log('    会话内切换：输入 /chinese 或 /english 后回车');
+  return true;
 }) && healthy;
 
 healthy = check('PATH 中的 codex-zh', () => {

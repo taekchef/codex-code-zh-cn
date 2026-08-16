@@ -10,8 +10,9 @@
 
 - ✅ 实时汉化 Codex CLI 终端界面（TUI）：启动框、Hook 审核、模型选择、会话恢复、MCP 状态、帮助输出、doctor 进度等
 - ✅ 安装后**直接输入 `codex` 就是中文**（接管 codex 命令，和 claude-code-zh-cn 的使用习惯一致）；`codex-zh` 作为显式包装器保留
+- ✅ 会话内随时切换：在 Codex 输入框输入 **`/chinese`**（或 `/zh`）回车 → 中文；**`/english`**（或 `/en`）→ 英文；选择会全局记住
 - ✅ 保留所有终端转义序列，每条译文**补齐到原文显示宽度**——边框、菜单、进度条不歪
-- ✅ 桌面版 Codex：自动写入 `[desktop] localeOverride = "zh-CN"`，启用内置中文界面
+- ✅ 桌面版 Codex：Settings → General → Language 里可直接选 **中文（中国）**；安装脚本也会自动写入 `[desktop] localeOverride = "zh-CN"`
 - ✅ 不修改 Codex 二进制：真实入口原样备份，卸载/恢复一步完成
 - ✅ 支持最新版 Codex CLI（当前验证：**0.147.0**，2026-08-07 发布）
 
@@ -34,6 +35,8 @@ codex exec "列出当前目录"       # 非交互中文输出
 codex --help | less            # 中文帮助
 codex-zh-doctor                # 健康检查
 ```
+
+在 Codex 输入框里输入 **`/chinese`** 回车 → 切中文；**`/english`** → 切英文（全局记住，下次启动仍生效）。
 
 > 安装脚本默认**接管 `codex` 命令**：把 npm 的 codex 入口换成小 shim，转发给中文包装器；
 > 真实 Codex 文件原样备份，卸载时恢复。若不想接管，安装时加 `--no-shadow`（Windows：`-NoShadow`）。

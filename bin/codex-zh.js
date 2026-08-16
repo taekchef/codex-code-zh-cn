@@ -26,21 +26,28 @@ const path = require('path');
 const { spawnSync } = require('child_process');
 const { StreamTranslator } = require('../lib/translator');
 const detect = require('../lib/detect');
+const settings = require('../lib/settings');
+const { createToggleDetector } = require('../lib/language-toggle');
 
 const HELP = `codex-zh — Codex CLI 简体中文实时翻译包装器
 
 Usage:
-  codex-zh [--codex-bin <path>] [--codex-zh-no-translate] [codex args...]
+  codex-zh [--codex-bin <path>] [--codex-zh-lang zh|en] [codex args...]
 
 Codex 参数原样转发（-m、exec、--help 等均可）。
    --codex-bin <path>          指定 Codex 可执行文件
+   --codex-zh-lang zh|en       本次启动语言（默认读取 settings.json）
    --codex-zh-no-translate     禁用翻译（等于 CODEX_ZH_DISABLE=1）
    --codex-zh-help             显示本帮助
 
+会话内切换（在 Codex 输入框里直接输入）：
+   /chinese 或 /zh              切换为中文（并全局记住）
+   /english 或 /en              切换为英文（并全局记住）
+
 Examples:
-  codex-zh
-  codex-zh exec "列出当前目录" --sandbox read-only
-  codex-zh --help | less
+   codex-zh
+   codex-zh exec "列出当前目录" --sandbox read-only
+   codex-zh --help | less
 `;
 
 function fail(msg, code = 1) {
@@ -49,7 +56,11 @@ function fail(msg, code = 1) {
 }
 
 function parseArgs(argv) {
-  const opts = { translate: process.env.CODEX_ZH_DISABLE !== '1', codexBin: null };
+  const opts = {
+    translate: process.env.CODEX_ZH_DISABLE !== '1',
+    codexBin: null,
+    language: process.env.CODEX_ZH_LANG || null,
+  };
   const rest = [];
   for (let i = 0; i < argv.length; i += 1) {
     const arg = argv[i];
@@ -57,6 +68,12 @@ function parseArgs(argv) {
       opts.help = true;
     } else if (arg === '--codex-zh-no-translate' || arg === '--no-translate') {
       opts.translate = false;
+    } else if (arg === '--codex-zh-lang') {
+      i += 1;
+      opts.language = argv[i];
+      if (!opts.language) fail('--codex-zh-lang requires zh or en');
+    } else if (arg.startsWith('--codex-zh-lang=')) {
+      opts.language = arg.slice('--codex-zh-lang='.length);
     } else if (arg === '--codex-bin') {
       i += 1;
       opts.codexBin = argv[i];
@@ -128,8 +145,8 @@ async function main() {
     }
   }
 
-  if (process.env.CODEX_ZH_SKIP === '1' || !opts.translate) {
-    // Direct passthrough (no PTY rewriting).
+  // 内部守卫：shim 的孙子进程不再二次包装。
+  if (process.env.CODEX_ZH_SKIP === '1') {
     const child = spawnSync(codexBin, rest, { stdio: 'inherit', env: process.env });
     process.exit(child.status == null ? 1 : child.status);
   }
@@ -142,6 +159,14 @@ async function main() {
       '缺少依赖 node-pty。请先运行安装脚本，或执行：npm install -g node-pty'
     );
   }
+
+  // 语言状态：优先本次启动参数/环境变量，其次持久化设置（/chinese 会写它）。
+  let language = opts.language;
+  if (!language || (language !== 'zh-CN' && language !== 'en')) {
+    language = settings.currentLanguage();
+  }
+  if (language !== 'zh-CN' && language !== 'en') language = 'zh-CN';
+  if (!opts.translate) language = 'en';
 
   const parent = {
     cols: process.stdout.isTTY ? process.stdout.columns : 120,
@@ -161,9 +186,47 @@ async function main() {
 
   process.stdout.on('error', () => {}); // swallow EPIPE when piped into head/less
   const entries = loadEntries();
+
+  // /chinese、/english 切换：Codex 会报 Unrecognized command，我们把这个
+  // 错误消息替换成切换成功的提示。
+  let pendingToggle = null;
+  let pendingToggleTimer = null;
+  const applyLanguage = (lang, typedCommand) => {
+    language = lang;
+    settings.setLanguage(language);
+    translator.enabled = language === 'zh-CN';
+    pendingToggle = {
+      typedCommand,
+      message: language === 'zh-CN'
+        ? '✅ 中文模式已开启（codex-code-zh-cn），界面已切换为中文。'
+        : '✅ English mode enabled (codex-code-zh-cn).',
+    };
+    if (pendingToggleTimer) clearTimeout(pendingToggleTimer);
+    pendingToggleTimer = setTimeout(() => {
+      pendingToggle = null;
+    }, 4000);
+  };
+
   const translator = new StreamTranslator(entries, (chunk) => {
     process.stdout.write(chunk);
+  }, {
+    enabled: language === 'zh-CN',
+    onBeforeText: (text) => {
+      if (pendingToggle) {
+        const needle = `Unrecognized command '/${pendingToggle.typedCommand}'`;
+        if (text.includes(needle)) {
+          const message = pendingToggle.message;
+          pendingToggle = null;
+          if (pendingToggleTimer) clearTimeout(pendingToggleTimer);
+          return message;
+        }
+      }
+      return undefined;
+    },
   });
+
+  // stdin 行缓冲：识别 /chinese、/zh、/english、/en + Enter。
+  const toggleDetector = createToggleDetector(applyLanguage);
 
   let p;
   try {
@@ -188,6 +251,7 @@ async function main() {
   }
   process.stdin.on('data', (data) => {
     try {
+      toggleDetector(data);
       p.write(data);
     } catch {}
   });

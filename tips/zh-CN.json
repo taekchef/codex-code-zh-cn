@@ -73,5 +73,10 @@
     "id": "term-width",
     "en": "If the TUI looks misaligned after resizing, make sure your terminal is at least 80 columns wide; the wrapper follows terminal resize events.",
     "zh": "调整窗口后如果界面错位，请确认终端宽度不小于 80 列；包装器会跟随终端 resize 事件。"
+  },
+  {
+    "id": "language-slash",
+    "en": "Type /chinese or /english in the Codex input box and press Enter to switch languages globally.",
+    "zh": "在 Codex 输入框输入 /chinese 或 /english 并回车，即可全局切换语言。"
   }
 ]

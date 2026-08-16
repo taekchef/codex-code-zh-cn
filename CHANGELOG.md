@@ -1,3 +1,16 @@
+## v1.1.1（2026-08-16）
+
+### 新增
+
+- **会话内语言切换命令**：在 Codex 输入框输入 `/chinese`（或 `/zh`）回车切中文、`/english`（或 `/en`）切英文；选择写入 settings.json，全局记住
+- 包装器新增 `--codex-zh-lang zh|en` 与 `CODEX_ZH_LANG` 环境变量
+- doctor 增加「包装器语言设置」检查
+
+### 改进
+
+- 桌面版入口说明：Settings → General → Language → 中文（中国）（安装脚本已自动写入 localeOverride）
+- 新增语言切换使用提示
+
 ## v1.1.0（2026-08-16）
 
 ### 新增

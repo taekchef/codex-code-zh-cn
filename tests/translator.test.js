@@ -71,3 +71,22 @@ test('full phrase entries translate whole unselected picker rows', () => {
   const out = run(['Balanced agentic coding model for everyday work.']);
   assert.equal(out, '均衡的 agentic 编码模型，适合日常工作。         ');
 });
+
+test('enabled:false passes text through unchanged', () => {
+  let out = '';
+  const t = new StreamTranslator(ENTRIES, (c) => (out += c), { enabled: false, flushIntervalMs: 0 });
+  t.feed('loading');
+  t.end();
+  assert.equal(out, 'loading');
+});
+
+test('onBeforeText can rewrite runs (used by /chinese feedback)', () => {
+  let out = '';
+  const t = new StreamTranslator(ENTRIES, (c) => (out += c), {
+    flushIntervalMs: 0,
+    onBeforeText: (text) => (text.includes('Unrecognized') ? '已切换' : undefined),
+  });
+  t.feed("Unrecognized command '/chinese'. Type \"/\" for a list of supported commands.");
+  t.end();
+  assert.equal(out, '已切换');
+});
