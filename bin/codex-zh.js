@@ -190,7 +190,6 @@ async function main() {
   // /chinese、/english 切换：Codex 会报 Unrecognized command，我们把这个
   // 错误消息替换成切换成功的提示。
   let pendingToggle = null;
-  let pendingToggleTimer = null;
   const applyLanguage = (lang, typedCommand) => {
     language = lang;
     settings.setLanguage(language);
@@ -201,10 +200,6 @@ async function main() {
         ? '✅ 中文模式已开启（codex-code-zh-cn），界面已切换为中文。'
         : '✅ English mode enabled (codex-code-zh-cn).',
     };
-    if (pendingToggleTimer) clearTimeout(pendingToggleTimer);
-    pendingToggleTimer = setTimeout(() => {
-      pendingToggle = null;
-    }, 4000);
   };
 
   const translator = new StreamTranslator(entries, (chunk) => {
@@ -217,7 +212,6 @@ async function main() {
         if (text.includes(needle)) {
           const message = pendingToggle.message;
           pendingToggle = null;
-          if (pendingToggleTimer) clearTimeout(pendingToggleTimer);
           return message;
         }
       }
